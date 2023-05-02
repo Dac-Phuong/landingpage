@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Cảm biến chuyển động",
+    "image": [
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/cam-bien-chuyen-dong05-510x510-1.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/giaiphap1_1590204584-247x296-1.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/cam-bien-chuyen-dong05-510x510-1.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/giaiphap2_1590204584-247x296-1.png"
+    ],
+    "content": [
+      "Điện áp làm việc: AC220 ~ 240V",
+      "Tần số: 5.8GHz",
+      "Công suất: max 1200W",
+      "Phạm vị cảm biến: hình nón phía trước 360 độ",
+      " Khoảng cách cảm ứng: 2 ~ 10 mét",
+      " Cảm biến ánh sáng: 10 ~ 500 lux",
+      " Nhiệt độ hoạt động ổn định: -35 ~ 80 độ C",
+      " Công suất chuyển đổi: <0.2mW",
+      " Công suất chuyển đổi: <0.2mW",
+      "Bảo hành: 24 tháng"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Công tắc cửa cuốn thông minh",
+    "image": [
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/04.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/ct3.jpg",
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/ct3-vang.jpg",
+      "https://lumichinhhang.vn/wp-content/uploads/2022/11/ct3-trang-nhom.jpg"
+    ],
+    "content": [
+      "Mặt kính cường lực chống xước",
+      "Viền nhôm vát kim cương hoặc bo tròn",
+      "Truyền thông: ZigBee",
+      "An toàn, chống cháy nổ",
+      " Thông số kỹ thuật",
+      " Điện áp hoạt động 100 – 240V AC ~ 50/60Hz",
+      " Công suất phát Zigbee 10 dbm",
+      " Điều khiển theo nhóm Rule, Cảnh, Lịch",
+      " Điều khiển từ xa thông qua internet/ mạng LAN ",
+      "Bảo hành: 24 tháng"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "BỘ ĐIỀU KHIỂN TRUNG TÂM",
+    "image": [
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-3-510x510-2.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-2-247x296-1.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-4-247x296-1.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-1-247x296-1.png"
+    ],
+    "content": [
+      "Cho thiết liên kết các thiết bị trong cùng hệ thống ",
+      "Truyền thông: Zigbee",
+      "Công suất: max 1200W",
+      "Điều khiển các thiết bị bằng ứng dụng Lumi Life.",
+      " Thông số kỹ thuật",
+      " Điện áp hoạt động 100 – 240V AC ~ 50/60Hz",
+      " Nhiệt độ hoạt động 0℃ – 50℃",
+      " Công suất phát Zigbee 10 dbm",
+      " Kích thước (D x R x C) 95.6 x 48.9 x 46 mm",
+      "Bảo hành: 24 tháng"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "BỘ ĐIỀU KHIỂN TRUNG TÂM",
+    "image": [
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-3-510x510-2.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-2-247x296-1.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-4-247x296-1.png",
+      "https://lumichinhhang.vn/wp-content/uploads/2020/12/HC-1-247x296-1.png"
+    ],
+    "content": [
+      "Cho thiết liên kết các thiết bị trong cùng hệ thống ",
+      "Truyền thông: Zigbee",
+      "Công suất: max 1200W",
+      "Điều khiển các thiết bị bằng ứng dụng Lumi Life.",
+      " Thông số kỹ thuật",
+      " Điện áp hoạt động 100 – 240V AC ~ 50/60Hz",
+      " Nhiệt độ hoạt động 0℃ – 50℃",
+      " Công suất phát Zigbee 10 dbm",
+      " Kích thước (D x R x C) 95.6 x 48.9 x 46 mm",
+      "Bảo hành: 24 tháng"
+    ]
+  }
+]

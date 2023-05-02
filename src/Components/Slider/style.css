@@ -1,0 +1,94 @@
+.heading {
+  position: absolute;
+  width: 100%;
+  max-width: 35%;
+  height: 75%;
+  background-color: rgba(000, 0, 0, 0.3);
+  top: 10%;
+  right: 14%;
+}
+
+.heading-text {
+  line-height: 20px;
+  size: 18px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.btn {
+  width: 30%;
+  height: 40px;
+  background-color: white;
+  text-align: center;
+  margin-top: 13%;
+}
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner-title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.banner-name {
+  width: 50%;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.banner-title h2 {
+  font-family: "Anton", sans-serif;
+  color: rgb(248, 248, 248);
+  font-size: 36px;
+  font-style: italic;
+  width: 65%;
+  margin: 0;
+  text-shadow: rgb(84, 113, 239) 2px 2px 0px;
+}
+.banner-title h3 {
+  font-family: "Anton", sans-serif;
+  color: rgb(251, 251, 251);
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.6;
+  text-shadow: rgb(84, 113, 239) 2px 1px 1px;
+}
+.banner-title p {
+  font-family: "Anton", sans-serif;
+  color: rgb(251, 251, 251);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  text-shadow: rgb(84, 113, 239) 1px 1px 0px;
+}
+.banner-btn {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f59f4a;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  transition: .5s;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(172, 95, 20) 1px 1px 1px;
+}
+.banner-btn:hover {
+  background-color: rgb(223, 143, 6);
+  transform: scale(1.1);
+}
+.banner-btn a {
+  font-family: "Anton", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+}

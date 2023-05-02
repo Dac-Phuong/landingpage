@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "name": "Máy in Laser đen/trắng Canon 2900 LBP",
+    "description": [
+      "Chức năng: In Laser trắng đen",
+      "Khổ giấy máy in: A4/A5",
+      "Cổng giao tiếp: USB 2.0",
+      "Mực in: Cartridge 303 (2,000 pages)/Cartridge 303 Twin Pack",
+      "Độ phân giải: 2.400 x 600 dpi",
+      "Khổ giấy in: A4, Letter",
+      "Tốc độ in: 12ppm"
+    ],
+    "image": [
+      "https://maytinhtientan.com/wp-content/uploads/2019/10/may-in-laser-canon-lbp2900-3-768x768.jpg",
+      "https://maytinhtientan.com/wp-content/uploads/2019/10/may-in-laser-canon-lbp2900-2-768x768.jpg",
+      "https://maytinhtientan.com/wp-content/uploads/2019/10/may-in-laser-canon-lbp2900-tientancomputer-768x768.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Máy in laser Canon MF241D – Print/ Copy/ Scan",
+    "description": [
+      "Chức năng: Print/ Copy/ Scan/ Duplex",
+      "Khổ giấy máy in: A4/A5",
+      "In đảo mặt: Có",
+      "Tốc độ in tối đa: 27 trang/phút",
+      "Cổng giao tiếp: USB",
+      "Dùng mực in: Canon 337",
+      "Trọng lượng: 11.4 kg",
+      "Bộ nhớ:512 MB",
+      "Catridge Mực: Cartridge 337"
+    ],
+    "image": [
+      "https://maytinhtientan.com/wp-content/uploads/2022/06/may-in-canon-mf241d-chinh-hang.jpg",
+      "https://maytinhtientan.com/wp-content/uploads/2022/06/may-in-canon-mf241d-2-768x768.jpg",
+      "https://maytinhtientan.com/wp-content/uploads/2022/06/may-in-canon-mf241d-1-768x768.jpg"
+    ]
+  },
+ 
+  {
+    "id": "4",
+    "name": "Laptop Dell Latitude E7390 Core i5/i7",
+    "description": [
+      "Intel Core i5 8350U 1.7GHz (up to 3.6 GHz)",
+      "CPU : Intel HD Graphics 620",
+      "Memory : 8 GB PC4L bus 2400GHZ",
+      "SSD : ssd 256GB",
+      "Độ phân giải : 1920 x 1080 tấm nền IPS",
+      "Màn Hình : 13.3 inch FullHD 1920×1080 (Cảm Ứng +500K)",
+      "Battery : 4 Cells",
+      "OS : Windows® 10 Professional 64Bit",
+      "Weight : 1.48 Kg"
+    ],
+    "image": [
+      "https://thegioiso365.vn/wp-content/uploads/2021/01/7fe5ec512ac4ce9a97d5-1067x800-1-1024x768.jpg",
+      "https://thegioiso365.vn/wp-content/uploads/2021/01/8b5b80e8467da223fb6c-1067x800-1-1024x768.jpg",
+      "https://thegioiso365.vn/wp-content/uploads/2021/01/0eee0faac93f2d61742e-1067x800-1-1024x768.jpg",
+      "https://thegioiso365.vn/wp-content/uploads/2021/01/5ab81befdd7a3924606b-1-1067x800-1-1024x768.jpg"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Máy chiếu Panasonic PT-LB386",
+    "description": [
+      "Hãng sản xuất : Panasonic",
+      "Model : PT-LB386",
+      "Công nghệ : LCD",
+      "Độ thu phóng : Kích thước phóng to màn hình 30-300”",
+      "Độ tương phản : 20000:1",
+      "Độ sáng : 3800 Ansi Lumens",
+      "Độ phân giải : XGA (1024x768)",
+      "Kích thước : Kích thước: 335x96x252mm",
+      "Trọng lượng : 2.9 Kg"
+    ],
+    "image": [
+      "https://anphat.com.vn/media/product/38671_43794_pro_pan_ptlb386_2.jpg",
+      "https://anphat.com.vn/media/product/38671_43794_pro_pan_ptlb386_3.jpg",
+      "https://anphat.com.vn/media/product/38671_43794_pro_pan_ptlb386_4.jpg",
+      "https://anphat.com.vn/media/product/38671_38671_43794_pro_pan_ptlb386_3_anphatpc.jpg"
+    ]
+  }
+]

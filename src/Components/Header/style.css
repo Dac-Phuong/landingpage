@@ -1,0 +1,115 @@
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 70px;
+  line-height: 70px;
+}
+.nav-header img {
+  display: block;
+  margin: 30px auto;
+}
+.header-main {
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background-color: #fff;
+  transition: 0.5s ease;
+  z-index: 3;
+  animation-name: slidein;
+  animation-duration: 2s;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+.list-menu {
+  transition: 0.5s;
+  display: block;
+  cursor: pointer;
+}
+.active {
+  color: #1067da;
+  /* text-shadow: rgb(4, 41, 110) 1px 1px 1px; */
+  /* border-bottom: 3px solid #1067da; */
+}
+.nav-number {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+  top: 15px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: red;
+  line-height: normal;
+}
+.nav-shoping p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  padding-left: 4px;
+  margin-top: -1px;
+}
+.nav-item,
+.nav-list {
+  display: flex;
+}
+.nav-item-list {
+  padding: 0 10px;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-hotline {
+  height: 50px;
+  width: 100%;
+  max-width: 200px;
+  margin: auto 0;
+  background-color: #f59f4a;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-hotline a {
+  color: rgb(255, 255, 255);
+  line-height: 50px;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.nav-hotline:hover {
+  background-color: rgb(223, 143, 6);
+  transform: scale(1.1);
+}
+.nav-list{
+  align-items: center;
+}
+.nav-list img{
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* keyframe */
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
