@@ -8,38 +8,49 @@ import "./style.css";
 function About() {
   return (
     <div id="About">
+      <div className="main-top-title bg-[#f5f5f5]">
+        <h2>GIỚI THIỆU VỀ HỒNG DƯƠNG</h2>
+        <div className="main-heading-line" />
+        <div className="flex max-w-[1200px] mx-auto border-2 rounded-lg  ">
+          <div className="w-2/4 ">
+            <img src={require("../../image/logo/logo.png")} />
+          </div>
+          <div className="w-2/4">
+            <p>
+              Công ty cổ phần Hồng Dương Việt Nam là công ty chuyên các thiết bị Công nghệ, điện tử thông minh. Các hệ thống nhà
+              thông minh, có khả năng điều khiển, giám sát từ xa qua điện thoại.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="About-company">
-        <div>
-          <div className="main-top-title ">
-            <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
-            <div className="main-heading-line" />
-            <div className="About-top-wrap">
-              {data.map((item) => {
-                return (
-                  <div key={item.id} className="About-top-service">
-                    <img alt="" className="w-full h-[260px]" src={item.image} />
-                    <div className="About-top-service-content">
-                      <h3>{item.name}</h3>
-                      <p>{item.title}</p>
-                      <div className="About-social-btn">
-                        <a
-                          className="social-btn-text"
-                          href="https://chat.zalo.me/"
-                        >
-                          Liên hệ tư vấn
-                        </a>
-                      </div>
+        <div className="About-company-title ">
+          <h2 className="mb-[15px]">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+          <div className="About-top-wrap">
+            {data.map((item) => {
+              return (
+                <div key={item.id} className="About-top-service">
+                  <img alt="" className="w-full h-[260px]" src={item.image} />
+                  <div className="About-top-service-content">
+                    <h3>{item.name}</h3>
+                    <p>{item.title}</p>
+                    <div className="About-social-btn">
+                      <a
+                        className="social-btn-text"
+                        href="https://chat.zalo.me/"
+                      >
+                        Liên hệ tư vấn
+                      </a>
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="">
-          <div className="main-top-title ">
+          <div>
             <h2>CAM KẾT CỦA CHÚNG TÔI</h2>
-            <div className="main-heading-line" />
             <p>
               Mang lại cho khách hàng sự hài lòng và những sản phẩm chất lượng
               nhất

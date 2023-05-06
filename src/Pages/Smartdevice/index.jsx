@@ -21,7 +21,7 @@ function Smartdevice() {
               <img
                 className="main__row-banner"
                 alt=""
-                src={require("../../image/banner/giai-phap-nha-thong-minh.png")}
+                src={require("../../image/banner/ngoi-nha-thong-minh-1.png")}
               />
             </Link>
             <div className="main-left-title">
