@@ -20,6 +20,17 @@
   text-shadow: rgb(4, 41, 110) 1px 1px 1px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.About-line{
+  width: 50%;
+  height: 4px;
+  background-color: #f3af3b;
+  position: absolute;
+  margin: 0 auto;
+  top: 43px;
+  left: 0 ;
+  z-index: -1;
+  right: 0;
+}
 .About-company p {
   color: rgb(50, 50, 50);
   font-size: 20px;
@@ -95,12 +106,12 @@
   width: 100%;
   height: 100%;
   display: flex;
-  margin-bottom: 20px;
+  margin: 20px 0;
   justify-content: space-between;
 }
 .About-top-service {
   width: calc(33.33% - 15px);
-  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   background-color: #fff;
 }
@@ -111,7 +122,7 @@
   display: flex;
   flex-direction: column;
 }
-.About-top-service img{
+.About-top-service img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
@@ -143,6 +154,21 @@
   background-color: #4b7ef8;
   cursor: pointer;
 }
+
+.About-image {
+  width: calc(33% - 10px);
+  overflow: hidden;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  position: relative;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+}
+.About-image:nth-child(1) {
+  width: 66.10%;
+}
+
 .About-social-btn:hover {
   background-color: rgb(9, 85, 226);
   transform: scale(1.07);

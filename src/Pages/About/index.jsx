@@ -6,26 +6,93 @@ import data from "../../data/Service/data.json";
 import "./style.css";
 
 function About() {
+  const image = [
+    {
+      id: 1,
+      image: require("../../image/camera/camera-1.jpg"),
+
+    },
+    {
+      id: 2,
+      image: require("../../image/camera/ctrinh-2.jpg"),
+    },
+    {
+      id: 3,
+      image: require("../../image/camera/ctrinh-1.jpg"),
+    },
+    {
+      id: 4,
+      image: require("../../image/camera/ctrinh-4.jpg"),
+
+    },
+    {
+      id: 5,
+      image: require("../../image/camera/ctrinh-3.jpg"),
+    },
+  ];
   return (
-    <div id="About">
+    <section id="About">
       <div className="main-top-title bg-[#f5f5f5]">
-        <h2>GIỚI THIỆU VỀ HỒNG DƯƠNG</h2>
+        <h2>GIỚI THIỆU VỀ CHÚNG TÔI</h2>
         <div className="main-heading-line" />
-        <div className="flex max-w-[1200px] mx-auto border-2 rounded-lg  ">
-          <div className="w-2/4 ">
-            <img src={require("../../image/logo/logo.png")} />
+        <div className="flex max-w-[1200px] mx-auto  ">
+          <div className="w-2/4 max-h-[350px]">
+            <img
+              className="w-full h-full"
+              alt=""
+              src={require("../../image/camera/banner.jpg")}
+            />
           </div>
-          <div className="w-2/4">
-            <p>
-              Công ty cổ phần Hồng Dương Việt Nam là công ty chuyên các thiết bị Công nghệ, điện tử thông minh. Các hệ thống nhà
-              thông minh, có khả năng điều khiển, giám sát từ xa qua điện thoại.
-            </p>
+          <div className="w-2/3 p-[20px]">
+            <div className="w-full ">
+              <p className="text-base ">
+                🎖️ Công ty tnhh thiết bị công nghệ Hồng Dương Việt Nam là công
+                ty chuyên các thiết bị Công nghệ, điện tử thông minh. Các hệ
+                thống nhà thông minh, có khả năng điều khiển, giám sát từ xa qua
+                điện thoại.
+              </p>
+              <p className="text-base pt-[10px] pb-[10px]">
+                🎖️ Sản phẩm nhà thông minh Hunonic đều được nghiên cứu và sản
+                xuất hoàn toàn tại Việt Nam.
+              </p>
+              <p className="text-base pt-[10px] pb-[10px]">
+                🎖️ Với mong muốn tất cả mọi người dân Việt Nam đều có cơ hội sở
+                hữu nhà thông minh. Nên chúng tôi đang không ngừng nỗ lực từng
+                ngày, từng giờ. Để có thể đem đến cho mọi người các sản phẩm nhà
+                thông minh chất lượng cao và có giá thành hợp lý nhất.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div className="About-company">
-        <div className="About-company-title ">
-          <h2 className="mb-[15px]">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+        <div className="w-full relative h-full">
+          <div className="max-w-[420px] m-auto bg-white">
+            <h2>CÁC CÔNG TRÌNH TIÊU BIỂU</h2>
+          </div>
+          <div className="About-line"></div>
+          <p className="">
+            Công ty tnhh thiết bị công nghệ Hồng Dương thi công các công trình
+          </p>
+          <div className="flex flex-wrap justify-between mt-[20px]">
+            {image.map((item) => {
+              return (
+                <div key={item.id} className="About-image overflow-hidden">
+                  <img className="w-full h-full" alt="" src={item.image} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="About-company-title relative">
+          <div className="max-w-[420px] m-auto bg-white">
+            <h2 className="mb-[15px]">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+          </div>
+          <div className="About-line"></div>
+          <p className="">
+            Ngoài cung cấp lắp đặt các thiết bị công nghệ thì chúng tôi còn có
+            thêm các dịch vụ
+          </p>
           <div className="About-top-wrap">
             {data.map((item) => {
               return (
@@ -48,9 +115,12 @@ function About() {
             })}
           </div>
         </div>
-        <div className="">
+        <div className="relative">
           <div>
-            <h2>CAM KẾT CỦA CHÚNG TÔI</h2>
+            <div className="max-w-[420px] m-auto bg-white">
+              <h2>CAM KẾT CỦA CHÚNG TÔI</h2>
+            </div>
+            <div className="About-line"></div>
             <p>
               Mang lại cho khách hàng sự hài lòng và những sản phẩm chất lượng
               nhất
@@ -117,7 +187,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default About;

@@ -13,8 +13,8 @@ function Contact() {
         />
       </div>
       <div className="Contact-wrap">
-        <div className="w-[40%] m-auto">
-          <div className="pt-[15%]">
+        <div className="w-[45%] m-auto">
+          <div>
             <img alt="" src={require("../../image/banner/img-contact.png")} />
           </div>
         </div>

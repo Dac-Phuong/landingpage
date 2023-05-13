@@ -89,15 +89,12 @@ h2 {
   align-items: center;
   border: 1px solid rgba(83, 83, 83, 0.5);
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.5);
+ 
   margin-right: 5px;
   margin-top: 5px;
   transition: 0.5s;
 }
-.social-list-icon:hover {
-  border: 1px solid rgb(9, 85, 226);
-  background: rgb(9, 85, 226);
-}
+
 .social-icon {
   color: #fff;
   margin: auto;

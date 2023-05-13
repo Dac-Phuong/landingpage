@@ -1,15 +1,12 @@
 import React from "react";
-import {
-  AiFillSkype,
-  AiFillTwitterCircle,
-  AiOutlineFieldTime,
-} from "react-icons/ai";
+import { AiFillSkype, AiOutlineFieldTime } from "react-icons/ai";
 import { SiZalo } from "react-icons/si";
 import { FiUsers, FiPhone, FiGlobe } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
+import { BsYoutube } from "react-icons/bs";
 import "./style.css";
-import { FaFacebook, FaCheck } from "react-icons/fa";
+import { FaCheck, FaFacebookF } from "react-icons/fa";
 function Footer() {
   return (
     <div className="w-full  bg-[#052A6E]">
@@ -20,7 +17,9 @@ function Footer() {
             <ul className="footer-item">
               <li className="footer-list-item">
                 <FiUsers className="mr-4 text-[20px]" />
-                <p>Đơn vị chủ quản: CÔNG TY TNHH THIẾT BỊ CÔNG NGHỆ HÔNG DƯƠNG</p>
+                <p>
+                  Đơn vị chủ quản: CÔNG TY TNHH THIẾT BỊ CÔNG NGHỆ HÔNG DƯƠNG
+                </p>
               </li>
               <li className="footer-list-item">
                 <IoLocationOutline className="mr-4 text-[20px]" />
@@ -41,28 +40,28 @@ function Footer() {
 
               <li className="footer-list-item">
                 <FiGlobe className="mr-4 text-[20px]" />
-                <p>Website: https://www.haidangpc.vn/</p>
+                <p>Website: https://www.haidangpc.vn</p>
               </li>
             </ul>
             <div className="social-network">
-              <div className="social-list-icon">
-                <a href="" className="social-icon">
-                  <FaFacebook className="text-[16px] item-center" />
+              <div className="social-list-icon bg-[#3A6ECF]">
+                <a href="/" className="social-icon">
+                  <FaFacebookF className="text-[16px] item-center" />
                 </a>
               </div>
-              <div className="social-list-icon">
-                <a href="" className="social-icon">
+              <div className="social-list-icon bg-[#0065F7]">
+                <a href="/" className="social-icon">
                   <SiZalo className="text-[16px] item-center" />
                 </a>
               </div>
-              <div className="social-list-icon">
-                <a href="" className="social-icon">
-                  <AiFillSkype className="text-[16px] item-center" />
+              <div className="social-list-icon bg-red-600">
+                <a href="/" className="social-icon">
+                  <BsYoutube className="text-[16px] item-center" />
                 </a>
               </div>
-              <div className="social-list-icon">
-                <a href="" className="social-icon">
-                  <AiFillTwitterCircle className="text-[16px] item-center" />
+              <div className="social-list-icon bg-[#01AAE9]">
+                <a href="/" className="social-icon">
+                  <AiFillSkype className="text-[16px] item-center" />
                 </a>
               </div>
             </div>
@@ -99,6 +98,7 @@ function Footer() {
             loading="lazy"
             className="w-full h-[85%] rounded-lg"
             referrerpolicy="no-referrer-when-downgrade"
+            title="google-map"
           ></iframe>
         </div>
       </div>
