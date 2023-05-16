@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import "./style.css";
 
 const Header = () => {
-  const [active, setActive] = useState(0);
   const [onclick, setOnclick] = useState(false);
   const [fixed, setFix] = useState(false);
   const closeMenu = () => setOnclick(false);

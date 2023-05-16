@@ -137,6 +137,9 @@
   background-color: #f5f5f5;
   position: relative;
 }
+.main-top-heading:hover .main__row-banner{
+  transform: scale(1.05);
+}
 .wrap-col-title p {
   line-height: 1.5;
   font-weight: 400;
