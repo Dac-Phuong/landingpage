@@ -43,7 +43,7 @@ function About() {
           </div>
           <div className="w-2/3 p-[20px] ">
             <div className="w-full ">
-              <p className="text-base ">
+              <p className="text-base text-justify ">
                 🎖️ Công ty tnhh thiết bị công nghệ Hồng Dương Việt Nam là công
                 ty chuyên các thiết bị Công nghệ, điện tử thông minh. Các hệ
                 thống nhà thông minh, có khả năng điều khiển, giám sát từ xa qua
@@ -54,12 +54,11 @@ function About() {
                 tiếng, đi đầu về công nghệ như nhà thông minh LUMI,GEEKLINK ...
                 , thiết bị an ninh HIKVISION,DAHUA,EZVIZ...
               </p>
-              <p className="text-base pt-[10px] pb-[10px]">
-                🎖️ Với mong muốn mang lại trải nghiệm tốt nhất, tiện nghi
-                nhất, an toàn nhất đến tất cả mọi nhà Nên chúng tôi đang không
-                ngừng nỗ lực từng ngày, từng giờ. Để có thể đem đến cho mọi
-                người các sản phẩm công nghệ chất lượng cao và có giá thành hợp
-                lý nhất.
+              <p className="text-base text-justify pt-[10px] pb-[10px]">
+                🎖️ Với mong muốn mang lại trải nghiệm tốt nhất, tiện nghi nhất,
+                an toàn nhất đến tất cả mọi nhà Nên chúng tôi đang không ngừng
+                nỗ lực từng ngày, từng giờ. Để có thể đem đến cho mọi người các
+                sản phẩm công nghệ chất lượng cao và có giá thành hợp lý nhất.
               </p>
             </div>
           </div>
@@ -78,7 +77,11 @@ function About() {
             {image.map((item) => {
               return (
                 <div key={item.id} className="About-image overflow-hidden">
-                  <img className="w-full h-full" alt="" src={item.image} />
+                  <img
+                    className="w-full h-full"
+                    alt=""
+                    src={item.image}
+                  />
                 </div>
               );
             })}

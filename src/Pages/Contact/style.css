@@ -27,13 +27,8 @@
   margin: auto;
   display: flex;
 }
-.Contact-wrap-col {
-  width: 60%;
-  color: #fff;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.Contact-wrap-col h2 {
+
+.Contact-wrap h2 {
   font-family: "Anton", sans-serif;
   color: rgb(242, 249, 255);
   font-size: 40px;
@@ -57,18 +52,17 @@
 }
 .Contact-wrap-col h3 {
   color: rgb(242, 249, 255);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 1.6;
-  padding-bottom: 5px;
 }
 .Contact-wrap-heading-1 p {
   font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 14px;
-  text-align: left;
   line-height: 1.4;
-  width: 90%;
+  width: 92%;
+  text-align: justify ;
 }
 .Contact-wrap-col-1 {
   width: 100%;

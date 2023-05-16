@@ -20,14 +20,14 @@
   text-shadow: rgb(4, 41, 110) 1px 1px 1px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.About-line{
+.About-line {
   width: 50%;
   height: 4px;
   background-color: #f3af3b;
   position: absolute;
   margin: 0 auto;
   top: 43px;
-  left: 0 ;
+  left: 0;
   z-index: -1;
   right: 0;
 }
@@ -114,6 +114,7 @@
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .About-top-service-content {
@@ -123,8 +124,13 @@
   flex-direction: column;
 }
 .About-top-service img {
+  transition: 0.5s;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+}
+.About-top-service img:hover,
+.About-image img:hover {
+  transform: scale(1.07);
 }
 .About-top-service-content h3 {
   font-size: 18px;
@@ -140,7 +146,7 @@
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
   font-weight: 300;
-  text-align: left;
+  text-align: justify ;
 }
 
 .About-social-btn {
@@ -158,7 +164,6 @@
 .About-image {
   width: calc(33% - 10px);
   overflow: hidden;
-  transition: 0.5s;
   margin-bottom: 10px;
   position: relative;
   max-height: 400px;
@@ -166,7 +171,10 @@
   object-fit: cover;
 }
 .About-image:nth-child(1) {
-  width: 66.10%;
+  width: 66.1%;
+}
+.About-image img {
+  transition: .5s;
 }
 
 .About-social-btn:hover {

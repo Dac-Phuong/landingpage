@@ -18,11 +18,11 @@ function Contact() {
             <img alt="" src={require("../../image/banner/img-contact.png")} />
           </div>
         </div>
-        <div className="Contact-wrap-col">
+        <div className="w-[55%] m-auto text-white ">
           <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
           <div className="Contact-wrap-title">
             <div className="Contact-wrap-heading-1">
-              <h3>Giải pháp thiết bị cộng nghệ</h3>
+              <h3 className="pb-2">Giải pháp thiết bị cộng nghệ</h3>
               <p>
                 giải pháp thiết bị công nghệ tối ưu hóa và nâng cao hiệu quả
                 hoạt động . giúp cải thiện quản lý và giám sát các hoạt động,
@@ -31,8 +31,8 @@ function Contact() {
                 thúc đẩy sự phát triển bền vững
               </p>
             </div>
-            <div className="Contact-wrap-heading-1">
-              <h3>Liên hệ ngay</h3>
+            <div className="Contact-wrap-heading-1 ">
+              <h3 className="pb-2">Liên hệ ngay</h3>
               <p>
                 Để biết thêm thông tin chi tiết về sản phẩm, giá và chương trình
                 ưu đãi, vui lòng điền thông tin dưới đây
