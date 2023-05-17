@@ -11,13 +11,11 @@ const Home = () => {
   return (
     <div className="container">
       <Sliders />
-      <div className="main">
-        <Smartdevice />
-        <Securitydevices />
-        <Officeequipment />
-        <About />
-        <Contact />
-      </div>
+      <Smartdevice />
+      <Securitydevices />
+      <Officeequipment />
+      <About />
+      <Contact />
     </div>
   );
 };

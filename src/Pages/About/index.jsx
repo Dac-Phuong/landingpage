@@ -51,7 +51,7 @@ function About() {
               </p>
               <p className="text-base pt-[10px] pb-[10px]">
                 🎖️ Các sản phẩm công nghệ đều được sản xuất của các hãng nổi
-                tiếng, đi đầu về công nghệ như nhà thông minh LUMI,GEEKLINK ...
+                tiếng đi đầu về công nghệ như nhà thông minh LUMI,GEEKLINK ...
                 , thiết bị an ninh HIKVISION,DAHUA,EZVIZ...
               </p>
               <p className="text-base text-justify pt-[10px] pb-[10px]">
@@ -78,7 +78,7 @@ function About() {
               return (
                 <div key={item.id} className="About-image overflow-hidden">
                   <img
-                    className="w-full h-full"
+                    className="w-full h-full overflow-hidden"
                     alt=""
                     src={item.image}
                   />

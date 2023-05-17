@@ -1,14 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-import { FaRegUserCircle, FaCheckCircle } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 function Contact() {
+  const [values, setValues] = useState({
+    name: "",
+    phone: "",
+    email: "",
+  });
+  const handleValue = (e) => {
+    setValues((values) => ({
+      ...values,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if ((values.name !== "", values.phone !== "", values.email !== "")) {
+      emailjs
+        .send(
+          "service_w9rwsdk",
+          "template_hmbgg8f",
+          values,
+          "i8QVJwDtE48HIU7Hn"
+        )
+        .then(
+          (result) => {
+            toast.success("Gửi gmail thành công !");
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+            toast.error("Gửi gmail thất bại");
+          }
+        );
+    } else {
+      toast.error("Vui lòng nhập đầy đủ thông tin");
+    }
+  };
   return (
     <div className="Contact">
       <div className="Contact-img">
         <img
-          alt=""
-          className="Contact-img"
+          alt="" 
+          className="Contact-img "
           src={require("../../image/banner/img-contact.jpg")}
         />
       </div>
@@ -49,7 +86,13 @@ function Contact() {
                     className="ml-[5px] mr-[5px] mt-[1px]"
                     size={20}
                   />
-                  <input className="from-input" placeholder="Họ tên" />
+                  <input
+                    className="from-input"
+                    type="name"
+                    name="name"
+                    placeholder="Họ tên"
+                    onChange={handleValue}
+                  />
                 </div>
                 <div className="from-input-user">
                   <FiPhoneCall
@@ -57,7 +100,13 @@ function Contact() {
                     className="ml-[5px] mr-[5px] mt-[1px]"
                     size={20}
                   />
-                  <input className="from-input" placeholder="Số điện thoại" />
+                  <input
+                    className="from-input"
+                    type="phone"
+                    name="phone"
+                    placeholder="Số điện thoại"
+                    onChange={handleValue}
+                  />
                 </div>
                 <div className="from-input-user">
                   <FiMail
@@ -65,9 +114,22 @@ function Contact() {
                     className="ml-[5px] mr-[5px] mt-[1px]"
                     size={20}
                   />
-                  <input className="from-input" placeholder="Email" />
+                  <input
+                    className="from-input"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    onChange={handleValue}
+                  />
                 </div>
-                <button className="from-button">Gửi đi</button>
+                <button
+                  type="submit"
+                  value="Send"
+                  className="from-button"
+                  onClick={sendEmail}
+                >
+                  Gửi đi
+                </button>
               </div>
             </from>
           </div>

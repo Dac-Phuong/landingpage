@@ -129,8 +129,12 @@
   border-top-left-radius: 8px;
 }
 .About-top-service img:hover,
+.About-social-btn:hover,
 .About-image img:hover {
   transform: scale(1.07);
+}
+.About-social-btn:hover {
+  background-color: rgb(9, 85, 226);
 }
 .About-top-service-content h3 {
   font-size: 18px;
@@ -146,7 +150,7 @@
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
   font-weight: 300;
-  text-align: justify ;
+  text-align: justify;
 }
 
 .About-social-btn {
@@ -169,15 +173,11 @@
   max-height: 400px;
   display: block;
   object-fit: cover;
+  border-radius: 8px;
 }
 .About-image:nth-child(1) {
   width: 66.1%;
 }
 .About-image img {
-  transition: .5s;
-}
-
-.About-social-btn:hover {
-  background-color: rgb(9, 85, 226);
-  transform: scale(1.07);
+  transition: 0.5s;
 }

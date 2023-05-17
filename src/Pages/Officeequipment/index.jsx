@@ -3,19 +3,9 @@ import "./style.css";
 import { Link } from "react-scroll";
 import data from "../../data/Officee/product.json";
 import { GoPrimitiveDot } from "react-icons/go";
-import { NextArrow, PrevArrow } from "../../Components/NextSlider";
 import { Carousel } from "react-responsive-carousel";
 function Officeequipment() {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
+ 
   return (
     <div id="Office">
       <div className="main-top-heading">
