@@ -47,14 +47,13 @@
   color: rgb(248, 248, 248);
   font-size: 36px;
   font-style: italic;
-  width: 65%;
   margin: 0;
   text-shadow: rgb(84, 113, 239) 2px 2px 0px;
 }
 .banner-title h3 {
   font-family: "Anton", sans-serif;
   color: rgb(251, 251, 251);
-  font-size: 24px;
+  font-size: 28px;
   font-style: italic;
   line-height: 1.6;
   text-shadow: rgb(84, 113, 239) 2px 1px 1px;
@@ -62,7 +61,7 @@
 .banner-title p {
   font-family: "Anton", sans-serif;
   color: rgb(251, 251, 251);
-  font-size: 18px;
+  font-size: 22px;
   font-style: italic;
   line-height: 1.6;
   text-shadow: rgb(84, 113, 239) 1px 1px 0px;

@@ -29,6 +29,7 @@ function Contact() {
         .then(
           (result) => {
             toast.success("Gửi gmail thành công !");
+            values.name("")
             console.log(result.text);
           },
           (error) => {

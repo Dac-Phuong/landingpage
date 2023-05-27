@@ -11,7 +11,7 @@ export function NextArrow(props) {
       onClick={onClick}
     >
       <button className="fas fa-chevron-right  w-[60px] h-[60px] text-[36px] text-[#555555] text-xl z-[1] ">
-        <FiChevronRight size={25} />
+        <FiChevronRight size={35} />
       </button>
     </div>
   );
@@ -22,12 +22,12 @@ export function PrevArrow(props) {
   return (
     <div
       className={
-        "absolute top-1/2 -translate-y-[60%]  z-[1] left-[15px]  group-hover:left-3 group-hover:opacity-100 transition-all duration-[0.4s] ease-out opacity-0"
+        "absolute top-1/2 -translate-y-[60%]  z-[1] left-[15px]   group-hover:left-3 group-hover:opacity-100 transition-all duration-[0.4s] ease-out opacity-0"
       }
       onClick={onClick}
     >
-      <button className="fas fa-chevron-left w-[60px] h-[60px] text-[36px] text-[#555555] text-xl">
-        <FiChevronLeft size={25} />
+      <button className="fas fa-chevron-left w-[60px] h-[100%] text-[36px] text-[#555555] text-xl">
+        <FiChevronLeft size={35} />
       </button>
     </div>
   );

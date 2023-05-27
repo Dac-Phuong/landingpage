@@ -6,10 +6,12 @@
       "Chức năng: In Laser trắng đen",
       "Khổ giấy máy in: A4/A5",
       "Cổng giao tiếp: USB 2.0",
-      "Mực in: Cartridge 303 (2,000 pages)/Cartridge 303 Twin Pack",
-      "Độ phân giải: 2.400 x 600 dpi",
+      "Tốc độ in: 12ppm",
       "Khổ giấy in: A4, Letter",
-      "Tốc độ in: 12ppm"
+      "Độ phân giải: 2.400 x 600 dpi",
+      "Hệ điều hành: Windows Xp/ 7 / 8 / 10, Linux (CUPS)",
+      "Mực in: Cartridge 303 (2,000 pages)/Cartridge 303 Twin Pack",
+      "Thời gian bảo hành: 12 tháng"
     ],
     "image": [
       "https://maytinhtientan.com/wp-content/uploads/2019/10/may-in-laser-canon-lbp2900-3-768x768.jpg",
@@ -61,6 +63,27 @@
   },
   {
     "id": "5",
+    "name": "Máy chiếu Panasonic PT-LB386",
+    "description": [
+      "Hãng sản xuất : Panasonic",
+      "Model : PT-LB386",
+      "Công nghệ : LCD",
+      "Độ thu phóng : Kích thước phóng to màn hình 30-300”",
+      "Độ tương phản : 20000:1",
+      "Độ sáng : 3800 Ansi Lumens",
+      "Độ phân giải : XGA (1024x768)",
+      "Kích thước : Kích thước: 335x96x252mm",
+      "Trọng lượng : 2.9 Kg"
+    ],
+    "image": [
+      "https://anphat.com.vn/media/product/38671_43794_pro_pan_ptlb386_2.jpg",
+      "https://anphat.com.vn/media/product/38671_43794_pro_pan_ptlb386_3.jpg",
+      "https://anphat.com.vn/media/product/38671_43794_pro_pan_ptlb386_4.jpg",
+      "https://anphat.com.vn/media/product/38671_38671_43794_pro_pan_ptlb386_3_anphatpc.jpg"
+    ]
+  },
+  {
+    "id": "6",
     "name": "Máy chiếu Panasonic PT-LB386",
     "description": [
       "Hãng sản xuất : Panasonic",

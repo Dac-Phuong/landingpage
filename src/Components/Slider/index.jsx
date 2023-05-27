@@ -16,15 +16,15 @@ function Sliders() {
       </div>
       <div className="banner-title">
         <h2>CÔNG TY TNHH THIẾT BỊ CÔNG NGHỆ HỒNG DƯƠNG</h2>
-        <div className="pt-[15px]">
+        <div className="pt-[20px]">
           <h3>Chuyên cung cấp và lắp đặt các loại thiết bị Công Nghệ</h3>
           <div className="banner-name">
             <FaCheck className="mr-[10px]" />
-            <p>Thiết bị thông minh</p>
+            <p>Thiết bị nhà thông minh</p>
           </div>
           <div className="banner-name">
             <FaCheck className="mr-[10px]" />
-            <p>Thiết bị an ninh</p>
+            <p>Thiết bị giám sát an ninh</p>
           </div>
           <div className="banner-name">
             <FaCheck className="mr-[10px]" />
@@ -32,7 +32,7 @@ function Sliders() {
           </div>
         </div>
         <div className="banner-btn">
-          <a href="https://chat.zalo.me/">LIÊN HỆ TƯ VẤN</a>
+          <a href="https://zalo.me/0963809069">LIÊN HỆ TƯ VẤN</a>
         </div>
       </div>
     </div>

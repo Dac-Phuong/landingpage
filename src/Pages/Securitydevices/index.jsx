@@ -15,6 +15,7 @@ import products from "../../data/Security/product.json";
 import "./style.css";
 import { NextArrow, PrevArrow } from "../../Components/NextSlider";
 import { Link } from "react-scroll";
+import Product from "../../Components/ProductSecurity";
 
 function Securitydevices() {
   const settings = {
@@ -50,9 +51,9 @@ function Securitydevices() {
           <h2>THIẾT BỊ AN NING</h2>
           <div className="main-heading-line" />
         </div>
-        <div className="main-wrap">
+        <div className="main-wrap flex">
           <div className="main-top-right">
-            <div className="w-2/4">
+            <div className="">
               <div>
                 <h3 className="mb-[10px]">Ưu Điểm Vượt Trội</h3>
                 <div className="right-heading mt-[10px]">
@@ -171,7 +172,7 @@ function Securitydevices() {
                 </div>
               </div>
               <div className="social-btn">
-                <a className="social-btn-text" href="https://chat.zalo.me/">
+                <a className="social-btn-text" href="https://zalo.me/0963809069">
                   Liên hệ tư vấn
                 </a>
               </div>
@@ -196,16 +197,19 @@ function Securitydevices() {
         </div>
       </div>
       <div className="Security-wrap">
+        <div className="w-full h-full">
+          <Product />
+        </div>
         {products.map((item) => {
           return (
-            <div key={item.id} className="Security-wrap-col">
-              <div className="Security-wrap-slider">
-                <Slider {...settings} className="group">
+            <div key={item.id} className="Security-wrap-col group">
+              <div className="w-[45%] p-3 h-full">
+                <Slider {...settings} className="h-full">  
                   {item.image.map((image, index) => {
                     return (
                       <img
                         key={index}
-                        className="object-cover w-full"
+                        className="object-cover w-full h-full"
                         alt=""
                         src={image}
                       />
@@ -213,7 +217,7 @@ function Securitydevices() {
                   })}
                 </Slider>
               </div>
-              <div className="Security-wrap-description mt-[10px] pl-[15px] pr-[15px]">
+              <div className="Security-wrap-description  pr-[15px]">
                 <div className="relative">
                   <h2 className="Security-wrap-heading">Thông số kỹ thuật</h2>
                 </div>
@@ -240,7 +244,7 @@ function Securitydevices() {
                 <div className="Security-social ">
                   <a
                     className="Security-social-btn-text"
-                    href="https://www.facebook.com/CAMERAHAIDANGTN"
+                    href="https://zalo.me/0963809069"
                   >
                     Liên hệ ngay
                   </a>

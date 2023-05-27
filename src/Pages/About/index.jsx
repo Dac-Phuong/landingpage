@@ -107,7 +107,7 @@ function About() {
                     <div className="About-social-btn">
                       <a
                         className="social-btn-text"
-                        href="https://chat.zalo.me/"
+                        href="https://zalo.me/0963809069"
                       >
                         Liên hệ tư vấn
                       </a>
