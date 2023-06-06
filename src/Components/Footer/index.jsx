@@ -16,30 +16,46 @@ function Footer() {
             <h2>THÔNG TIN LIÊN HỆ</h2>
             <ul className="footer-item">
               <li className="footer-list-item">
-                <FiUsers className="mr-4 text-[20px]" />
+                <div className=" mr-4 text-[20px]">
+                  <FiUsers />
+                </div>
                 <p>
                   Đơn vị chủ quản: CÔNG TY TNHH THIẾT BỊ CÔNG NGHỆ HÔNG DƯƠNG
                 </p>
               </li>
               <li className="footer-list-item">
-                <IoLocationOutline className="mr-4 text-[20px]" />
-                <p>Address: Chùa Hang , Đồng Hỷ ,Thành phố Thái Nguyên</p>
+                <div className=" mr-4 text-[20px]">
+                  <IoLocationOutline />
+                </div>
+                <p>
+                  Address: Tổ 4 , Phường Chùa Hang - Đồng Hỷ ,Thành phố Thái
+                  Nguyên
+                </p>
               </li>
               <li className="footer-list-item">
-                <AiOutlineFieldTime className="mr-4 text-[20px]" />
+                <div className="mr-4 text-[20px]">
+                  <AiOutlineFieldTime />
+                </div>
                 <p>Thời gian làm việc : 7h45 - 18h30 thứ 2 - chủ nhật</p>
               </li>
               <li className="footer-list-item">
-                <FiPhone className="mr-4 text-[20px]" />
+                <div className="  mr-4 text-[20px]">
+                  <FiPhone />
+                </div>
                 <p>Hotline: 0818.212.282</p>
               </li>
               <li className="footer-list-item">
-                <TfiEmail className="mr-4 text-[20px]" />
+                <div className="mr-4 text-[20px]">
+                  <TfiEmail />
+                </div>
+
                 <p>Email: haidangpc@gmail.com</p>
               </li>
 
               <li className="footer-list-item">
-                <FiGlobe className="mr-4 text-[20px]" />
+                <div className="mr-4 text-[20px]">
+                  <FiGlobe />
+                </div>
                 <p>Website: https://www.haidangpc.vn</p>
               </li>
             </ul>

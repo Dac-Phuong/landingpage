@@ -46,3 +46,50 @@
 .carousel .slide img {
   height: 250px;
 }
+
+@media only screen and (max-width: 1023px) {
+  .Office-product {
+    padding: 0 20px;
+  }
+  .Office-product-item {
+    width: 100%;
+  }
+  .list-desciption li {
+    font-size: 12px;
+  }
+  .product-name {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+ 
+  .Security-wrap,.Office-product{
+    padding: 0.75rem
+  }
+  .Office-product-item {
+    flex-direction: column;
+  }
+  .Office-product-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .Office-product-item:nth-child(odd) .Office-product-img:first-child {
+    order: 0;
+  }
+  .wrap-col-content {
+    width: 100%;
+  }
+  .Security-wrap-col{
+    padding: 0;
+  }
+  .list-desciption li,.Security-item-list,.Security-wrap-item li{
+    font-size: 9px;
+  }
+
+  .product-name{
+    font-size: 12px;
+  }
+  .wrap-col-btn {
+    width: 50%;
+  }
+}

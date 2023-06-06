@@ -61,8 +61,8 @@
   color: rgb(255, 255, 255);
   font-size: 14px;
   line-height: 1.4;
-  width: 92%;
-  text-align: justify ;
+  width: 100%;
+  text-align: justify;
 }
 .Contact-wrap-col-1 {
   width: 100%;
@@ -111,4 +111,25 @@
 }
 .from-button:hover {
   transform: scale(1.07);
+}
+/* responsive */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .Contact-img {
+    height: 560px;
+  }
+  .Contact-wrap h2 {
+    padding: 0;
+  }
+  .Contact-wrap {
+    padding: 0 20px;
+    bottom: 0px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .Contact-wrap h2 {
+    font-size: 30px;
+  }
+  .Contact-wrap-heading-1 p {
+    font-size: 12px;
+  }
 }

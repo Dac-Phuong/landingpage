@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import MenuMobile from "../MenuMobile";
 import "./style.css";
 
 const Header = () => {
@@ -110,6 +111,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <MenuMobile/>
     </header>
   );
 };

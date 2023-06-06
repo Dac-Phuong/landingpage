@@ -181,3 +181,39 @@
 .About-image img {
   transition: 0.5s;
 }
+/* responsive */
+@media only screen and (max-width: 1440px) {
+  .flex ,.About-top-wrap{
+    padding:0 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .About-top-service{
+    width: calc(33.33% - 8px);
+  }
+  .About-top-service-content h3 , .About-headline h3{
+    font-size: 14px;
+  }
+  .About-top-service-content p{
+    font-size: 12px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .About-wrap{
+    width: 100%;
+    padding: 0 20px;
+  }
+ 
+  .About-headline div{
+    text-align: justify;
+    font-size: 12px;
+  }
+  .Contact-img{
+    height: 600px;
+  }
+ 
+}

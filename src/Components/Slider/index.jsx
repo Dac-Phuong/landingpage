@@ -11,7 +11,7 @@ function Sliders() {
           decoding="async"
           loading="lazy"
           width="100%"
-          className="h-full"
+          className="h-full max-lg:h-[500px] "
         />
       </div>
       <div className="banner-title">

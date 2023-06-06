@@ -53,11 +53,8 @@ function Officeequipment() {
           </h2>
         </div>
       </div>
-
       <div className="Office-product">
-        <div>
-          <ProductOficee />
-        </div>
+        <div>{/* <ProductOficee /> */}</div>
         {data.map((item) => {
           return (
             <div key={item.id} className="Office-product-item">
@@ -65,14 +62,7 @@ function Officeequipment() {
                 <div className="wrap-col-content p-[14px]">
                   <Carousel infiniteLoop={true} autoPlay={true} interval={2000}>
                     {item.image.map((image, index) => {
-                      return (
-                        <img
-                          key={index}
-                          className="h-full w-full"
-                          alt={item.name.id}
-                          src={image}
-                        />
-                      );
+                      return <img key={index} alt={item.name.id} src={image} />;
                     })}
                   </Carousel>
                 </div>
@@ -85,7 +75,7 @@ function Officeequipment() {
                       <GoPrimitiveDot
                         color="#2A2388"
                         className=" mr-1"
-                        size={20}
+                        size={18}
                       />
                       <li>{list}</li>
                     </ul>

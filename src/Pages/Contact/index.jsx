@@ -69,7 +69,7 @@ function Contact() {
                 thúc đẩy sự phát triển bền vững
               </p>
             </div>
-            <div className="Contact-wrap-heading-1 ">
+            <div className="Contact-wrap-heading-1 ml-3">
               <h3 className="pb-2">Liên hệ ngay</h3>
               <p>
                 Để biết thêm thông tin chi tiết về sản phẩm, giá và chương trình

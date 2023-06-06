@@ -1,10 +1,4 @@
-.header-container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
-  height: 70px;
-  line-height: 70px;
-}
+
 .nav-header img {
   display: block;
   margin: 30px auto;
@@ -17,16 +11,21 @@
 }
 .fixed {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   opacity: 1;
   background-color: #fff;
   transition: 0.5s ease;
   z-index: 3;
+  width: 100%;
   animation-name: slidein;
   animation-duration: 2s;
   box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 70px;
+  line-height: 70px;
 }
 .list-menu {
   transition: 0.5s;
@@ -35,8 +34,7 @@
 }
 .active {
   color: #1067da;
-  /* text-shadow: rgb(4, 41, 110) 1px 1px 1px; */
-  /* border-bottom: 3px solid #1067da; */
+  
 }
 .nav-number {
   position: absolute;
@@ -68,6 +66,7 @@
 .nav-item-list {
   padding: 0 10px;
   color: #000;
+  list-style: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .nav-hotline {
@@ -93,10 +92,10 @@
   background-color: rgb(223, 143, 6);
   transform: scale(1.1);
 }
-.nav-list{
+.nav-list {
   align-items: center;
 }
-.nav-list img{
+.nav-list img {
   border-radius: 50%;
   height: 50px;
   object-fit: cover;
@@ -111,5 +110,20 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* responsive */
+@media (min-width: 1024px) and (max-width:1440px) {
+  .header-container{
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width:1023px) {
+  .header-main{
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
   }
 }

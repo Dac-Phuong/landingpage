@@ -52,7 +52,7 @@ function Securitydevices() {
           <div className="main-heading-line" />
         </div>
         <div className="main-wrap flex">
-          <div className="main-top-right">
+          <div className="w-2/4">
             <div className="">
               <div>
                 <h3 className="mb-[10px]">Ưu Điểm Vượt Trội</h3>
@@ -178,7 +178,7 @@ function Securitydevices() {
               </div>
             </div>
           </div>
-          <div className="main-wrap-left ">
+          <div className="w-2/4 ">
             <Link to={"Home"} className="cursor-pointer">
               <img
                 className="main__row-banner"
@@ -198,12 +198,12 @@ function Securitydevices() {
       </div>
       <div className="Security-wrap">
         <div className="w-full h-full">
-          <Product />
+          {/* <Product /> */}
         </div>
         {products.map((item) => {
           return (
             <div key={item.id} className="Security-wrap-col group">
-              <div className="w-[45%] p-3 h-full">
+              <div className="w-[45%] max-md:w-full p-3 h-full">
                 <Slider {...settings} className="h-full">  
                   {item.image.map((image, index) => {
                     return (
