@@ -19,15 +19,15 @@ function Sliders() {
         <div className="pt-[20px]">
           <h3>Chuyên cung cấp và lắp đặt các loại thiết bị Công Nghệ</h3>
           <div className="banner-name">
-            <FaCheck className="mr-[10px]" />
+            <FaCheck className="check-icon mr-[10px]" />
             <p>Thiết bị nhà thông minh</p>
           </div>
           <div className="banner-name">
-            <FaCheck className="mr-[10px]" />
+            <FaCheck className="check-icon mr-[10px]" />
             <p>Thiết bị giám sát an ninh</p>
           </div>
           <div className="banner-name">
-            <FaCheck className="mr-[10px]" />
+            <FaCheck className="check-icon mr-[10px]" />
             <p>Thiết bị văn phòng</p>
           </div>
         </div>

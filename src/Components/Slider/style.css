@@ -116,7 +116,7 @@
   .banner-title h3 {
     font-size: 22px;
   }
-  .banner-title p {
+  .banner-title p ,.check-icon{
     font-size: 18px;
   }
   .banner-btn {
@@ -138,7 +138,7 @@
   .banner-title h3 {
     font-size: 18px;
   }
-  .banner-title p {
+  .banner-title p ,.check-icon{
     font-size: 15px;
   }
   .banner-btn {
@@ -163,7 +163,7 @@
   .banner-title h3{
     font-size: 11px;
   }
-  .banner-title p{
+  .banner-title p ,.check-icon{
     font-size: 10px;
   }
   .banner-btn {

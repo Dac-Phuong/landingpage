@@ -302,6 +302,7 @@ p {
 }
 .carousel .thumb {
   border: 1px solid #ccc;
+  height: 80px;
 }
 .image img {
   cursor: pointer;
@@ -439,7 +440,7 @@ p {
   .wrap-col-name {
     font-size: 18px;
   }
- 
+
 }
 @media only screen and (max-width: 475px) {
   .main-top-title h2 {
