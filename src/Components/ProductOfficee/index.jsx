@@ -70,7 +70,7 @@ function ProductOficee() {
       {ischeck ? (
         <div className="wrap-product-detail relative">
           <div className="product-detail ">
-            <div className="cursor-pointer z-10 ">
+            <div className="cursor-pointer pb-2 z-10 ">
               <TfiClose
                 className=" ml-auto"
                 size={24}

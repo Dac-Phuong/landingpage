@@ -5,6 +5,7 @@
 @media only screen and (max-width: 767px) {
   .product-detail {
     overflow: scroll;
+    height: 600px;
   }
   .product-detail-item {
     flex-direction: column;

@@ -267,11 +267,7 @@ p {
   margin: 10px;
   margin-left: 0;
 }
-.carousel .thumb {
-  width: 5%;
-  height: 60px;
-  padding: 0;
-}
+
 .carousel .carousel-status,
 .carousel .control-dots {
   display: none;
@@ -450,7 +446,8 @@ p {
     font-size: 20px;
   }
   .carousel .thumbs li {
-    max-width: 70px;
+    max-width: 65px;
+    height: 65px;
   }
   .wrap-col-name{
     font-size: 16px;
