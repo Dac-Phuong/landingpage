@@ -151,9 +151,11 @@
   .Security-wrap-col {
     flex-direction: column;
   }
- 
-  .main-wrap,
-  .Security-wrap-description {
+  .Security-wrap-description{
+    padding: 0;
+  }
+  .main-wrap
+   {
     padding: 0.75rem;
     flex-direction: column;
   }
