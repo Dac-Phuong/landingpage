@@ -70,11 +70,13 @@ function ProductOficee() {
       {ischeck ? (
         <div className="wrap-product-detail relative">
           <div className="product-detail ">
-            <TfiClose
-              size={23}
-              className=" absolute cursor-pointer z-10 right-5 top-10 "
-              onClick={() => setIscheck(false)}
-            />
+            <div className="cursor-pointer z-10 ">
+              <TfiClose
+                className=" ml-auto"
+                size={24}
+                onClick={() => setIscheck(false)}
+              />
+            </div>
             <div className="product-detail-item flex">
               <Carousel
                 infiniteLoop={true}

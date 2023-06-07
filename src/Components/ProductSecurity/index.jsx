@@ -69,8 +69,8 @@ function Product() {
       {ischeck ? (
         <div className="wrap-product-detail">
           <div className="product-detail relative">
-            <div className="cursor-pointer z-10 p-2 top-0 right-0 absolute">
-              <TfiClose size={24} onClick={() => setIscheck(false)} />
+            <div className="cursor-pointer z-10 top-0 right-0 ">
+              <TfiClose className="ml-auto" size={24} onClick={() => setIscheck(false)} />
             </div>
             <div className="product-detail-col flex">
               <Carousel
