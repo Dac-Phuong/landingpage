@@ -37,7 +37,7 @@ function Smartdevice() {
                 </div>
               </div>
             </div>
-            <div className="w-2/4 ">
+            <div className="main__row-banner-1 w-2/4 ">
               <Link className="" to={"Home"}>
                 <img
                   className="main__row-banner "

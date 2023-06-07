@@ -59,7 +59,7 @@ function Footer() {
                 <p>Website: https://www.haidangpc.vn</p>
               </li>
             </ul>
-            <div className="social-network">
+            <div className="social-network ">
               <div className="social-list-icon bg-[#3A6ECF]">
                 <a href="/" className="social-icon">
                   <FaFacebookF className="text-[16px] item-center" />
@@ -112,12 +112,13 @@ function Footer() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927.5208549394938!2d105.83027366962378!3d21.582666645840202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527c16e2f9c19%3A0x4a6ef90ccf465ef4!2zTcOheSB0w61uaCBo4bqjaSDEkcSDbmc!5e0!3m2!1svi!2s!4v1682668939461!5m2!1svi!2s"
             allowFullScreen=""
             loading="lazy"
-            className="w-full h-[85%] rounded-lg"
+            className="w-full h-[85%] rounded-lg max-md:h-[200px]"
             referrerpolicy="no-referrer-when-downgrade"
             title="google-map"
           ></iframe>
         </div>
       </div>
+
       <div className="footer-line">
         <div className="footer-line-container"></div>
         <span>©2023 Allrights reserved echeckin.vn</span>

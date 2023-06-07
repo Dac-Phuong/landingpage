@@ -33,15 +33,15 @@ function About() {
       <div className="main-top-title bg-[#f5f5f5]">
         <h2>GIỚI THIỆU VỀ CHÚNG TÔI</h2>
         <div className="main-heading-line" />
-        <div className="flex max-w-[1200px] pb-4 mx-auto  ">
-          <div className="w-2/4 max-h-[350px]">
+        <div className="About-banner flex max-w-[1200px] pb-4 mx-auto  ">
+          <div className="About-banner-img w-2/4  max-md:w-[100%]">
             <img
               className="w-full h-full rounded-lg"
               alt=""
               src={require("../../image/camera/banner.jpg")}
             />
           </div>
-          <div className="w-2/3 p-[20px] ">
+          <div className=" max-md:w-[100%] w-2/3 p-[20px] max-md:p-[0.75rem]">
             <div className="w-full ">
               <p className="text-base text-justify ">
                 🎖️ Công ty tnhh thiết bị công nghệ Hồng Dương Việt Nam là công
@@ -51,8 +51,8 @@ function About() {
               </p>
               <p className="text-base pt-[10px] pb-[10px]">
                 🎖️ Các sản phẩm công nghệ đều được sản xuất của các hãng nổi
-                tiếng đi đầu về công nghệ như nhà thông minh LUMI,GEEKLINK ...
-                , thiết bị an ninh HIKVISION,DAHUA,EZVIZ...
+                tiếng đi đầu về công nghệ như nhà thông minh LUMI,GEEKLINK ... ,
+                thiết bị an ninh HIKVISION,DAHUA,EZVIZ...
               </p>
               <p className="text-base text-justify pt-[10px] pb-[10px]">
                 🎖️ Với mong muốn mang lại trải nghiệm tốt nhất, tiện nghi nhất,
@@ -99,8 +99,12 @@ function About() {
           <div className="About-top-wrap">
             {data.map((item) => {
               return (
-                <div key={item.id} className="About-top-service">
-                  <img alt="" className="w-full h-[260px]" src={item.image} />
+                <div key={item.id} className="About-top-service ">
+                  <img
+                    alt=""
+                    className="w-full h-[260px] max-md:h-[200px]"
+                    src={item.image}
+                  />
                   <div className="About-top-service-content">
                     <h3>{item.name}</h3>
                     <p>{item.title}</p>

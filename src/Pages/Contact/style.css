@@ -133,3 +133,30 @@
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .Contact-img {
+    height: 760px;
+  }
+  .Contact-wrap h2 {
+    font-size: 22px;
+  }
+  .Contact-wrap{
+    padding: 0.75rem;
+    flex-direction: column;
+  }
+
+  .Contact-wrap-banner img{
+    width: 100%;
+  }
+  .Contact-wrap-banner{
+    margin: 0 auto;
+  }
+  .Contact-wrap-title,.Contact-wrap-heading-1 ,.from-info-user{
+    flex-direction: column;
+    width: 100%;
+  }
+  .from-input-user{
+    margin-bottom: 5px;
+    height: 40px;
+  }
+}

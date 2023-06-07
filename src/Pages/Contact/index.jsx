@@ -51,12 +51,12 @@ function Contact() {
         />
       </div>
       <div className="Contact-wrap">
-        <div className="w-[45%] m-auto">
-          <div>
+        <div className="Contact-wrap-banner w-[45%] m-auto">
+          <div className="Contact-wrap-banner">
             <img alt="" src={require("../../image/banner/img-contact.png")} />
           </div>
         </div>
-        <div className="w-[55%] m-auto text-white ">
+        <div className="max-md:w-[100%] w-[55%] m-auto text-white ">
           <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
           <div className="Contact-wrap-title">
             <div className="Contact-wrap-heading-1">
@@ -69,8 +69,8 @@ function Contact() {
                 thúc đẩy sự phát triển bền vững
               </p>
             </div>
-            <div className="Contact-wrap-heading-1 ml-3">
-              <h3 className="pb-2">Liên hệ ngay</h3>
+            <div className="Contact-wrap-heading-1 ml-3 max-md:ml-0">
+              <h3 className="pb-2 ">Liên hệ ngay</h3>
               <p>
                 Để biết thêm thông tin chi tiết về sản phẩm, giá và chương trình
                 ưu đãi, vui lòng điền thông tin dưới đây

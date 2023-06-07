@@ -45,6 +45,7 @@
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .About-wrap-col {
@@ -115,6 +116,7 @@
   border-radius: 8px;
   background-color: #fff;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .About-top-service-content {
@@ -183,19 +185,19 @@
 }
 /* responsive */
 @media only screen and (max-width: 1440px) {
-  .flex ,.About-top-wrap{
-    padding:0 20px;
+  .About-top-wrap {
+    padding: 0 20px;
   }
 }
-
 @media only screen and (max-width: 1023px) {
-  .About-top-service{
+  .About-top-service {
     width: calc(33.33% - 8px);
   }
-  .About-top-service-content h3 , .About-headline h3{
+  .About-top-service-content h3,
+  .About-headline h3 {
     font-size: 14px;
   }
-  .About-top-service-content p{
+  .About-top-service-content p {
     font-size: 12px;
     display: -webkit-box;
     overflow: hidden;
@@ -203,17 +205,88 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
   }
-  .About-wrap{
+  .About-wrap {
     width: 100%;
     padding: 0 20px;
   }
- 
-  .About-headline div{
+  .About-headline div {
     text-align: justify;
     font-size: 12px;
   }
-  .Contact-img{
+  .Contact-img {
     height: 600px;
   }
- 
+}
+@media only screen and (max-width: 768px) {
+  .About-company h2 {
+    font-size: 20px;
+  }
+  .Contact-img {
+    height: 800px;
+  }
+  .About-company p {
+    font-size: 18px;
+    width: 80%;
+  }
+  .About-top-wrap,
+  .flex-wrap,
+  .About-top-service-content,
+  .About-wrap,
+  .About-banner-img {
+    padding: 0.75rem;
+  }
+  .About-image:nth-child(1) {
+    width: 100%;
+  }
+  .About-image {
+    width: calc(50% - 6px);
+    height: 300px;
+  }
+  .About-top-service-content h3 {
+    font-size: 12px;
+  }
+  .About-top-service-content p {
+    font-size: 11px;
+    width: 100%;
+  }
+  .About-social-btn {
+    height: 40px;
+    line-height: 40px;
+  }
+  .About-wrap-col {
+    width: calc(50% - 10px);
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .About-headline {
+    padding: 10px;
+  }
+  .About-banner{
+    flex-direction: column;
+  }
+  .text-base{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .About-top-service-content h3 {
+    font-size: 14px;
+  }
+  .About-company p, .About-headline h3 {
+    font-size: 12px;
+  }
+  .About-image,
+  .About-top-service {
+    width: 100%;
+  }
+  .About-top-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .About-wrap-col {
+    padding:  0;
+  }
+  .About-headline div {
+    font-size: 10px;
+  }
 }

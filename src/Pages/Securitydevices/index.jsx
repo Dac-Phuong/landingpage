@@ -52,10 +52,12 @@ function Securitydevices() {
           <div className="main-heading-line" />
         </div>
         <div className="main-wrap flex">
-          <div className="w-2/4">
+          <div className="main-col-1 w-2/4">
             <div className="">
               <div>
-                <h3 className="mb-[10px]">Ưu Điểm Vượt Trội</h3>
+                <h3 className="mb-[10px] text-[#084CCC] font-bold">
+                  Ưu Điểm Vượt Trội
+                </h3>
                 <div className="right-heading mt-[10px]">
                   <div className="right-heading-1">
                     <div className="right-heading-icon">
@@ -73,7 +75,7 @@ function Securitydevices() {
                         className="text-[24px] mr-[5px]"
                       />
                     </div>
-                    <p>Hệ thống camera lắp đặt vô cùng dễ dàng</p>
+                    <p>Hệ thống camera lắp đặt dễ dàng</p>
                   </div>
                 </div>
                 <div className="right-heading mt-[10px]">
@@ -98,7 +100,7 @@ function Securitydevices() {
                 </div>
               </div>
               <div className="mt-4">
-                <h3>Tính Năng Chính</h3>
+                <h3 className="text-[#084CCC] font-bold">Tính Năng Chính</h3>
                 <div className="main-top-item">
                   <div className="right-heading mt-[10px]">
                     <div className="w-full">
@@ -172,13 +174,16 @@ function Securitydevices() {
                 </div>
               </div>
               <div className="social-btn">
-                <a className="social-btn-text" href="https://zalo.me/0963809069">
+                <a
+                  className="social-btn-text"
+                  href="https://zalo.me/0963809069"
+                >
                   Liên hệ tư vấn
                 </a>
               </div>
             </div>
           </div>
-          <div className="w-2/4 ">
+          <div className="main-col-2 w-2/4 ">
             <Link to={"Home"} className="cursor-pointer">
               <img
                 className="main__row-banner"
@@ -197,14 +202,12 @@ function Securitydevices() {
         </div>
       </div>
       <div className="Security-wrap">
-        <div className="w-full h-full">
-          {/* <Product /> */}
-        </div>
+        <div className="w-full h-full">{/* <Product /> */}</div>
         {products.map((item) => {
           return (
             <div key={item.id} className="Security-wrap-col group">
               <div className="w-[45%] max-md:w-full p-3 h-full">
-                <Slider {...settings} className="h-full">  
+                <Slider {...settings} className="h-full">
                   {item.image.map((image, index) => {
                     return (
                       <img
