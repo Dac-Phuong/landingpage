@@ -59,7 +59,7 @@ function Product() {
               >
                 <img alt="" src={item.image[0]} />
                 <div>
-                  <h4 className=" p-4 text-sm">{item.name}</h4>
+                  <h4 className="max-sm:text-xs  p-2 text-sm">{item.name}</h4>
                 </div>
               </div>
             );
@@ -68,13 +68,16 @@ function Product() {
       </div>
       {ischeck ? (
         <div className="wrap-product-detail">
-          <div className="product-detail ">
-            <div className="flex ">
+          <div className="product-detail relative">
+            <div className="cursor-pointer z-10 p-2 top-0 right-0 absolute">
+              <TfiClose size={24} onClick={() => setIscheck(false)} />
+            </div>
+            <div className="product-detail-col flex">
               <Carousel
                 infiniteLoop={true}
                 autoPlay={true}
                 interval={2000}
-                className="h-[100%] w-[40%]"
+                className="product-detail-Carousel  w-[40%]"
               >
                 {item.image.map((image, index) => {
                   return (
@@ -87,12 +90,9 @@ function Product() {
                   );
                 })}
               </Carousel>
-              <div className="w-[60%] ">
+              <div className="product-detail-col-1 w-[60%] ">
                 <div className="">
                   <div className="Security-wrap-description pl-[15px] pr-[15px]">
-                    <div className="cursor-pointer z-10 p-2 top-0 right-0 absolute">
-                      <TfiClose size={24} onClick={() => setIscheck(false)} />
-                    </div>
                     <div className="relative items-center">
                       <h2 className="Security-wrap-heading ">
                         Thông số kỹ thuật

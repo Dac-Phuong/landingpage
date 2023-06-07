@@ -33,7 +33,7 @@ function About() {
       <div className="main-top-title bg-[#f5f5f5]">
         <h2>GIỚI THIỆU VỀ CHÚNG TÔI</h2>
         <div className="main-heading-line" />
-        <div className="About-banner flex max-w-[1200px] pb-4 mx-auto  ">
+        <div className="About-banner mt-4 flex max-w-[1200px] pb-4 mx-auto  ">
           <div className="About-banner-img w-2/4  max-md:w-[100%]">
             <img
               className="w-full h-full rounded-lg"

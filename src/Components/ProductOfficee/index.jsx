@@ -68,8 +68,13 @@ function ProductOficee() {
         </Slider>
       </div>
       {ischeck ? (
-        <div className="wrap-product-detail">
+        <div className="wrap-product-detail relative">
           <div className="product-detail ">
+            <TfiClose
+              size={23}
+              className=" absolute cursor-pointer z-10 right-5 top-10 "
+              onClick={() => setIscheck(false)}
+            />
             <div className="product-detail-item flex">
               <Carousel
                 infiniteLoop={true}
@@ -88,15 +93,10 @@ function ProductOficee() {
                   );
                 })}
               </Carousel>
-              <div className="w-[55%] h-full">
+              <div className="max-md:w-[100%] w-[55%] h-full">
                 <div className="Security-wrap-description  pl-[15px] pr-[15px]">
                   <div className="pt-5 items-center">
                     <div className="">
-                      <TfiClose
-                        size={23}
-                        className=" absolute cursor-pointer right-0 top-0 "
-                        onClick={() => setIscheck(false)}
-                      />
                       <p className="product-name">{item.name}</p>
                       {item.description.map((list) => {
                         return (

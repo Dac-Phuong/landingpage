@@ -35,7 +35,7 @@ function Officeequipment() {
               </div>
             </div>
           </div>
-          <div className="w-2/4 cursor-pointer">
+          <div className=" main__row-banner-bg w-2/4 cursor-pointer">
             <Link to={"Home"}>
               <img
                 className="main__row-banner"
@@ -54,7 +54,7 @@ function Officeequipment() {
         </div>
       </div>
       <div className="Office-product">
-        <div>{/* <ProductOficee /> */}</div>
+        <div><ProductOficee /></div>
         {data.map((item) => {
           return (
             <div key={item.id} className="Office-product-item">

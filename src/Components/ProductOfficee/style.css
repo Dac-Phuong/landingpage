@@ -1,3 +1,15 @@
-.product-detail-item .carousel .slide img{
-    height: 340px;
+.product-detail-item .carousel .slide img {
+  height: 340px;
+}
+
+@media only screen and (max-width: 767px) {
+  .product-detail {
+    overflow: scroll;
+  }
+  .product-detail-item {
+    flex-direction: column;
+  }
+  .product-detail-item .carousel-root {
+    width: 100%;
+  }
 }

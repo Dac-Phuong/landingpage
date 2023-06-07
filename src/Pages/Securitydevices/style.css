@@ -140,7 +140,7 @@
   .Security-specifications {
     width: calc(50% - 4px);
   }
-  .slick-slide img {
+  .Security-wrap-col .slick-slide img {
     height: 356px;
     object-fit: initial;
   }
@@ -167,13 +167,16 @@
   .Security-wrap-description h2 {
     font-size: 20px;
   }
+ 
+
 }
 @media only screen and (max-width: 425px) {
-  .slick-slide img {
+  .Security-wrap-col .slick-slide img {
     height: 300px;
   }
   .Security-item-list,
   .Security-wrap-item li {
     font-size: 9px;
   }
+ 
 }

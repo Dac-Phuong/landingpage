@@ -74,7 +74,7 @@
   .Office-product-item:nth-child(odd) .Office-product-img:first-child {
     order: 0;
   }
-  .wrap-col-content ,.cursor-pointer{
+  .wrap-col-content ,.main__row-banner-bg{
     width: 100%;
   }
   .Security-wrap-col{

@@ -202,7 +202,7 @@ function Securitydevices() {
         </div>
       </div>
       <div className="Security-wrap">
-        <div className="w-full h-full">{/* <Product /> */}</div>
+        <div className="w-full h-full"><Product /></div>
         {products.map((item) => {
           return (
             <div key={item.id} className="Security-wrap-col group">
