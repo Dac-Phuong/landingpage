@@ -406,7 +406,7 @@ p {
   }
   .wrap-col-content {
     margin: 0 auto;
-    padding: 15px;
+    padding: 0.75rem;
   }
   .wrap-col-btn {
     margin: 20px auto;
@@ -447,10 +447,13 @@ p {
     font-size: 20px;
   }
   .carousel .thumbs li {
-    max-width: 65px;
-    height: 65px;
+    max-width:55px;
+    height: 55px;
   }
   .wrap-col-name{
     font-size: 16px;
+  }
+  .wrap-col-content {
+    padding: 0.50rem;
   }
 }

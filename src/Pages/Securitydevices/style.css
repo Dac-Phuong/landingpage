@@ -33,7 +33,7 @@
   margin-bottom: 20px;
   display: flex;
   border-radius: 12px;
-  padding: 10px 0;
+  padding: 20px ;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.2);
   background-color: rgb(255, 255, 255);
@@ -128,6 +128,11 @@
   font-weight: 500;
   line-height: 30px;
   padding-left: 10px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 /* responsive */
 @media only screen and (max-width: 1440px) {
@@ -169,7 +174,7 @@
   .Security-social {
     margin: 10px auto;
   }
-  .Security-wrap-description h2 {
+  .Security-wrap-description h2 ,.Security-wrap-title h2{
     font-size: 20px;
   }
  
@@ -183,5 +188,7 @@
   .Security-wrap-item li {
     font-size: 9px;
   }
- 
+  .Security-wrap-title h2{
+    font-size: 18px;
+  }
 }

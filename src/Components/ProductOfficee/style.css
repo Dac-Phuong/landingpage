@@ -1,4 +1,4 @@
-.product-detail-item .carousel .slide img {
+.carousel .slide img {
   height: 340px;
 }
 
@@ -12,5 +12,7 @@
   }
   .product-detail-item .carousel-root {
     width: 100%;
+
   }
+ 
 }

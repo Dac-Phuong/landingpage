@@ -115,7 +115,7 @@ h2 {
     bottom: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .footer-container{
     padding: 0.75rem;
   }

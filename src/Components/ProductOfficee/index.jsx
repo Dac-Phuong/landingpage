@@ -96,7 +96,7 @@ function ProductOficee() {
                 })}
               </Carousel>
               <div className="max-md:w-[100%] w-[55%] h-full">
-                <div className="Security-wrap-description  pl-[15px] pr-[15px]">
+                <div className="Security-wrap-title  pl-[15px] pr-[15px]">
                   <div className="pt-5 items-center">
                     <div className="">
                       <p className="product-name">{item.name}</p>

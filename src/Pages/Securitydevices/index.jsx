@@ -205,8 +205,8 @@ function Securitydevices() {
         <div className="w-full h-full"><Product /></div>
         {products.map((item) => {
           return (
-            <div key={item.id} className="Security-wrap-col group">
-              <div className="w-[45%] max-md:w-full p-3 h-full">
+            <div key={item.id} className="Security-wrap-col max-lg:p-[10px] min-[1025px]:p-[10px] max-[1920px]:p-[10px] group">
+              <div className="w-[45%] max-md:w-full h-full pr-3">
                 <Slider {...settings} className="h-full">
                   {item.image.map((image, index) => {
                     return (
@@ -220,7 +220,7 @@ function Securitydevices() {
                   })}
                 </Slider>
               </div>
-              <div className="Security-wrap-description  pr-[15px]">
+              <div className="Security-wrap-description ">
                 <div className="relative">
                   <h2 className="Security-wrap-heading">Thông số kỹ thuật</h2>
                 </div>

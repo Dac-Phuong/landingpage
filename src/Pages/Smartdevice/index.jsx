@@ -82,7 +82,7 @@ function Smartdevice() {
                       <a href="https://zalo.me/0963809069">Liên hệ tư vấn</a>
                     </div>
                   </div>
-                  <div className="wrap-col-content w-2/4 pt-[14px] pl-[5px] pr-[5px] pb-[14px]">
+                  <div className="wrap-col-content w-2/4 p-[15px]">
                     <Carousel
                       infiniteLoop={true}
                       autoPlay={true}

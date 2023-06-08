@@ -34,14 +34,14 @@ function About() {
         <h2>GIỚI THIỆU VỀ CHÚNG TÔI</h2>
         <div className="main-heading-line" />
         <div className="About-banner mt-4 flex max-w-[1200px] pb-4 mx-auto  ">
-          <div className="About-banner-img w-2/4  max-md:w-[100%]">
+          <div className="About-banner-img w-2/4 max-md:w-[100%]">
             <img
               className="w-full h-full rounded-lg"
               alt=""
               src={require("../../image/camera/banner.jpg")}
             />
           </div>
-          <div className=" max-md:w-[100%] w-2/3 p-[20px] max-md:p-[0.75rem]">
+          <div className=" max-md:w-[100%]  w-2/4 p-[20px] max-md:p-[0.75rem]">
             <div className="w-full ">
               <p className="text-base text-justify ">
                 🎖️ Công ty tnhh thiết bị công nghệ Hồng Dương Việt Nam là công
@@ -60,6 +60,14 @@ function About() {
                 nỗ lực từng ngày, từng giờ. Để có thể đem đến cho mọi người các
                 sản phẩm công nghệ chất lượng cao và có giá thành hợp lý nhất.
               </p>
+              <div className="social-btn">
+                <a
+                  className="social-btn-text"
+                  href="https://zalo.me/0963809069"
+                >
+                  Liên hệ tư vấn
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -73,7 +81,7 @@ function About() {
           <p className="">
             Công ty tnhh thiết bị công nghệ Hồng Dương thi công các công trình
           </p>
-          <div className="flex flex-wrap justify-between mt-[20px]">
+          <div className="About-construction flex flex-wrap justify-between ">
             {image.map((item) => {
               return (
                 <div key={item.id} className="About-image overflow-hidden">

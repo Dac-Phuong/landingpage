@@ -205,7 +205,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
   }
-  .About-wrap {
+  .About-wrap,.About-construction {
     width: 100%;
     padding: 0 20px;
   }
@@ -216,8 +216,18 @@
   .Contact-img {
     height: 600px;
   }
+  .text-base {
+    font-size: 14px;
+  }
+  .About-wrap-col {
+    width: calc(25% - 8px);
+    padding: 10px;
+  }
+  .About-banner-img {
+    padding-left: 20px;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .About-company h2 {
     font-size: 20px;
   }
@@ -227,6 +237,7 @@
   .About-company p {
     font-size: 18px;
     width: 80%;
+    margin-bottom: 20px;
   }
   .About-top-wrap,
   .flex-wrap,
@@ -245,7 +256,8 @@
     font-size: 12px;
   }
   .About-top-service-content p {
-    font-size: 11px;
+    font-size: 10px;
+    text-align: left;
     width: 100%;
   }
   .About-social-btn {
@@ -253,25 +265,26 @@
     line-height: 40px;
   }
   .About-wrap-col {
-    width: calc(50% - 10px);
+    width: calc(50% - 5px);
     margin-top: 0;
     margin-bottom: 10px;
   }
   .About-headline {
     padding: 10px;
   }
-  .About-banner{
+  .About-banner {
     flex-direction: column;
   }
-  .text-base{
+  .text-base {
     font-size: 13px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .About-top-service-content h3 {
     font-size: 14px;
   }
-  .About-company p, .About-headline h3 {
+  .About-company p,
+  .About-headline h3 {
     font-size: 12px;
   }
   .About-image,
@@ -283,7 +296,7 @@
     flex-direction: column;
   }
   .About-wrap-col {
-    padding:  0;
+    padding: 0;
   }
   .About-headline div {
     font-size: 10px;

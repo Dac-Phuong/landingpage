@@ -25,11 +25,10 @@ function Product() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 676,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -92,7 +91,7 @@ function Product() {
               </Carousel>
               <div className="product-detail-col-1 w-[60%] ">
                 <div className="">
-                  <div className="Security-wrap-description pl-[15px] pr-[15px]">
+                  <div className="Security-wrap-title relative pl-[5px] pr-[5px]">
                     <div className="relative items-center">
                       <h2 className="Security-wrap-heading ">
                         Thông số kỹ thuật

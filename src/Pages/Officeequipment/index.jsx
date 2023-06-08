@@ -58,16 +58,16 @@ function Officeequipment() {
         {data.map((item) => {
           return (
             <div key={item.id} className="Office-product-item">
-              <div className="Office-product-img">
-                <div className="wrap-col-content p-[14px]">
+              <div className="Office-product-img p-[15px]">
+                <div className="wrap-col-content pr-4">
                   <Carousel infiniteLoop={true} autoPlay={true} interval={2000}>
                     {item.image.map((image, index) => {
-                      return <img key={index} alt={item.name.id} src={image} />;
+                      return <img key={index} alt={item.name.id}  src={image} />;
                     })}
                   </Carousel>
                 </div>
               </div>
-              <div className="p-[20px]">
+              <div className="product-col-description pt-4">
                 <p className="product-name">{item.name}</p>
                 {item.description.map((list) => {
                   return (

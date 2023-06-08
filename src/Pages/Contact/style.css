@@ -132,8 +132,11 @@
   .Contact-wrap-heading-1 p {
     font-size: 12px;
   }
+  .Contact-wrap-col-1{
+    padding: 10px;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .Contact-img {
     height: 760px;
   }
@@ -159,4 +162,5 @@
     margin-bottom: 5px;
     height: 40px;
   }
+  
 }
