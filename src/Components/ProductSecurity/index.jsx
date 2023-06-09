@@ -69,7 +69,7 @@ function Product() {
         <div className="wrap-product-detail">
           <div className="product-detail relative">
             <div className="cursor-pointer z-10 top-0 right-0 ">
-              <TfiClose className="ml-auto pb-2 " size={27} onClick={() => setIscheck(false)} />
+              <TfiClose className="ml-auto pb-2 mt-2 mr-2" size={27} onClick={() => setIscheck(false)} />
             </div>
             <div className="product-detail-col flex">
               <Carousel

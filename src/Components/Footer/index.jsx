@@ -121,7 +121,7 @@ function Footer() {
 
       <div className="footer-line">
         <div className="footer-line-container"></div>
-        <span>©2023 Allrights reserved echeckin.vn</span>
+        <span>Copyright ©2023 Công ty thiết bị công nghệ Hồng Dương </span>
       </div>
     </div>
   );

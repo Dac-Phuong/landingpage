@@ -8,16 +8,21 @@
   margin: 20px auto;
   display: flex;
   border-radius: 10px;
+  background-color: #d1e3fc;
   padding: 20px;
-  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+}
+.Office-product-item:nth-child(odd){
+  background-color: #F3E2CF;
+
 }
 .Office-product-item:nth-child(odd) .Office-product-img:first-child {
   order: 1;
 }
+.Office-product-item:nth-child(even) .Office-product-img{
+  padding-right: 10px;
+}
 .Office-product-img {
-  display: flex;
-  width: 50%;
+  width: 100%;
   padding: 0;
 }
 .product-name {
@@ -29,7 +34,7 @@
   font-family: "Roboto", sans-serif;
   color: rgb(4, 41, 110);
 }
-.Office-product-item img {
+.Office-product-item img ,.product-col-description{
   width: 100%;
   object-fit: cover;
 }
@@ -65,12 +70,18 @@
   .product-name {
     font-size: 16px;
   }
+  .carousel .thumbs-wrapper{
+    padding-left: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   .Security-wrap,
-  .Office-product , .wrap-col-content,
+  .Office-product , 
   .Security-wrap-col{
     padding:0.75rem;
+    width: 100%;
+  }
+  .wrap-col-content{
     width: 100%;
   }
   .Office-product-item {
@@ -93,7 +104,6 @@
   .list-desciption li {
     font-size: 12px;
   }
-
   .wrap-col-btn {
     width: 50%;
   }
@@ -104,11 +114,14 @@
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .product-detail-item .carousel .slide img {
     height: 250px;
   }
   .Security-wrap-col {
     padding: 0.5rem;
+  }
+  .Office-product-item:nth-child(even) .Office-product-img{
+    padding: 0;
   }
 }

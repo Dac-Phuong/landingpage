@@ -61,7 +61,7 @@ function Smartdevice() {
             {product.map((item, index) => {
               return (
                 <div key={item.id} className="main-wrap-col">
-                  <div className="wrap-col-content w-2/4 p-[15px]">
+                  <div className="wrap-col-content w-2/4 p-[10px]">
                     <div className="wrap-colum">
                       <h3 className="wrap-col-name">{item.name}</h3>
                     </div>
@@ -82,7 +82,7 @@ function Smartdevice() {
                       <a href="https://zalo.me/0963809069">Liên hệ tư vấn</a>
                     </div>
                   </div>
-                  <div className="wrap-col-content w-2/4 p-[15px]">
+                  <div className="wrap-col-content w-2/4 ">
                     <Carousel
                       infiniteLoop={true}
                       autoPlay={true}
@@ -92,7 +92,7 @@ function Smartdevice() {
                         return (
                           <img
                             key={index}
-                            className="h-full w-full"
+                            className="h-full  w-full"
                             alt={item.name.id}
                             src={image}
                           />

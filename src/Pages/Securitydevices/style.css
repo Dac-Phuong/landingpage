@@ -69,6 +69,7 @@
   width: 100%;
   flex-direction: column;
   position: relative;
+  padding-left: 10px;
 }
 .Security-social {
   width: calc(50% - 10px);

@@ -5,14 +5,13 @@
 @media only screen and (max-width: 767px) {
   .product-detail {
     overflow: scroll;
-    height: 650px;
+    height: 700px;
+    margin: 20% 0;
   }
   .product-detail-item {
     flex-direction: column;
   }
   .product-detail-item .carousel-root {
     width: 100%;
-
   }
- 
 }

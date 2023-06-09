@@ -61,7 +61,7 @@
   max-width: 1000px;
   width: 100%;
   max-height: 600px;
-  margin: 7% auto;
+  margin: 10% auto;
   padding: 20px 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -87,7 +87,7 @@
     height: 300px;
   }
   .product-detail{
-    padding: 0.50rem;
+    padding:0 0.50rem;
   }
   .Security-wrap-title{
     padding: 0;
@@ -113,13 +113,25 @@
   .Security-wrap-title h2{
     font-size: 20px;
   }
-}
-@media only screen and (max-width: 1024px) {
-  .product-detail .carousel .slide img{
-    height: 250px;
-  }
   .carousel .thumb{
     height: 60px;
     max-width: 60px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .product-detail .carousel .slide img {
+    height: 250px;
+  }
+  .Security-wrap{
+    margin: 0 auto;
+  }
+  .wrap-product-col{
+    height: 300px;
+  }
+  .wrap-product-col img{
+    height: 80%;
+  }
+  .text-sm{
+    font-size: 0.75rem;
   }
 }
