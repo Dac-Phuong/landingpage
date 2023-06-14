@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import product from "../../data/Smart/data.json";
+import { motion } from "framer-motion";
 import "./style.css";
 
 function Smartdevice() {
@@ -11,42 +12,49 @@ function Smartdevice() {
     <div id="Smart">
       <div className="main-top">
         <div className="main-top-heading">
-          <div className="main-top-title ">
-            <h2>THIẾT BỊ THÔNG MINH</h2>
-            <div className="main-heading-line" />
-          </div>
-          <div className="main-wrap-left">
-            <div className="main-left-title">
-              <div className="">
-              <h4>KHẢO SÁT – BÁO GIÁ – LẮP ĐẶT</h4>
-                <h2>GIẢI PHÁP NHÀ THÔNG MINH</h2>
-                <p>
-                  Giải pháp tự động hóa với tiện ích thông minh và hiện đại,
-                  thân thiện với người dùng. Nâng cao hiệu quả sử dụng, giá trị
-                  bền vững và lợi ích lâu dài. Giảm chi phí tối đa khi lắp đặt,
-                  tiết kiệm năng lượng khi sử dụng. Đảm bảo an toàn về điện khi
-                  hoạt động và sử dụng thiết bị.
-                </p>
-                <div className="social-btn">
-                  <a
-                    className="social-btn-text"
-                    href="https://zalo.me/0963809069"
-                  >
-                    Liên hệ tư vấn
-                  </a>
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <div className="main-top-title ">
+              <h2>THIẾT BỊ THÔNG MINH</h2>
+              <div className="main-heading-line" />
+            </div>
+            <div className="main-wrap-left">
+              <div className="main-left-title">
+                <div className="">
+                  <h4>KHẢO SÁT – BÁO GIÁ – LẮP ĐẶT</h4>
+                  <h2>GIẢI PHÁP NHÀ THÔNG MINH</h2>
+                  <p>
+                    Giải pháp tự động hóa với tiện ích thông minh và hiện đại,
+                    thân thiện với người dùng. Nâng cao hiệu quả sử dụng, giá
+                    trị bền vững và lợi ích lâu dài. Giảm chi phí tối đa khi lắp
+                    đặt, tiết kiệm năng lượng khi sử dụng. Đảm bảo an toàn về
+                    điện khi hoạt động và sử dụng thiết bị.
+                  </p>
+                  <div className="social-btn">
+                    <a
+                      className="social-btn-text"
+                      href="https://zalo.me/0963809069"
+                    >
+                      Liên hệ tư vấn
+                    </a>
+                  </div>
                 </div>
               </div>
+              <div className="main__row-banner-1 w-2/4 ">
+                <Link className="" to={"Home"}>
+                  <img
+                    className="main__row-banner "
+                    alt=""
+                    src={require("../../image/banner/ngoi-nha-thong-minh-1.png")}
+                  />
+                </Link>
+              </div>
             </div>
-            <div className="main__row-banner-1 w-2/4 ">
-              <Link className="" to={"Home"}>
-                <img
-                  className="main__row-banner "
-                  alt=""
-                  src={require("../../image/banner/ngoi-nha-thong-minh-1.png")}
-                />
-              </Link>
-            </div>
-          </div>
+          </motion.div>
         </div>
         <div className="main-product">
           <div className="w-full mt-[20px] mb-[30px]">
@@ -60,7 +68,14 @@ function Smartdevice() {
           <div className="main-warp w-full">
             {product.map((item, index) => {
               return (
-                <div key={item.id} className="main-wrap-col">
+                <motion.div
+                  initial={{ opacity: 0, translateY: 100 }}
+                  whileInView={{ opacity: 1, translateY: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  viewport={{ once: true }}
+                  key={item.id}
+                  className="main-wrap-col"
+                >
                   <div className="wrap-col-content w-2/4 p-[10px]">
                     <div className="wrap-colum">
                       <h3 className="wrap-col-name">{item.name}</h3>
@@ -100,7 +115,7 @@ function Smartdevice() {
                       })}
                     </Carousel>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>

@@ -99,6 +99,10 @@
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  animation-name: pulse;
+  animation-delay: 0s;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 .from-info-user {
   display: flex;
@@ -109,8 +113,22 @@
   font-size: 18px;
   font-weight: 600;
 }
-.from-button:hover {
-  transform: scale(1.07);
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
 /* responsive */
 @media (min-width: 1024px) and (max-width: 1440px) {

@@ -69,27 +69,45 @@
 .banner-btn {
   margin-top: 30px;
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   height: 50px;
   line-height: 50px;
   background-color: #f59f4a;
   align-items: center;
   text-align: center;
   border-radius: 6px;
+  animation-name: pulse;
+  animation-delay: 0s;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
   transition: 0.5s;
   color: rgb(255, 255, 255);
   text-shadow: rgb(172, 95, 20) 1px 1px 1px;
 }
-.banner-btn:hover {
-  background-color: rgb(223, 143, 6);
-  transform: scale(1.1);
-}
+
 .banner-btn a {
-  font-family: "Anton", sans-serif;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   font-weight: bold;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
 /* responsive */
 @media only screen and (max-width: 1440px) {
@@ -105,7 +123,6 @@
   .banner-title p {
     font-size: 20px;
   }
-
 }
 @media only screen and (max-width: 1023px) {
   .banner-title h2 {
@@ -114,7 +131,8 @@
   .banner-title h3 {
     font-size: 22px;
   }
-  .banner-title p ,.check-icon{
+  .banner-title p,
+  .check-icon {
     font-size: 18px;
   }
   .banner-btn {
@@ -125,7 +143,6 @@
   .banner-btn a {
     font-size: 14px;
   }
-
 }
 @media only screen and (max-width: 768px) {
   .banner-title h2 {
@@ -134,7 +151,8 @@
   .banner-title h3 {
     font-size: 18px;
   }
-  .banner-title p ,.check-icon{
+  .banner-title p,
+  .check-icon {
     font-size: 15px;
   }
   .banner-btn {
@@ -145,21 +163,22 @@
   .banner-btn a {
     font-size: 12px;
   }
-  .banner-slider{
+  .banner-slider {
     height: 450px;
   }
 }
 @media only screen and (max-width: 425px) {
-  .banner-title{
-    padding:0  0.75rem;
+  .banner-title {
+    padding: 0 0.75rem;
   }
-  .banner-title h2{
+  .banner-title h2 {
     font-size: 14px;
   }
-  .banner-title h3{
+  .banner-title h3 {
     font-size: 11px;
   }
-  .banner-title p ,.check-icon{
+  .banner-title p,
+  .check-icon {
     font-size: 10px;
   }
   .banner-btn {
@@ -170,7 +189,7 @@
   .banner-btn a {
     font-size: 10px;
   }
-  .banner-slider{
+  .banner-slider {
     height: 350px;
   }
 }

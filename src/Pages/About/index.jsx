@@ -4,6 +4,7 @@ import { FaSearchLocation, FaTruck } from "react-icons/fa";
 import { BsShieldFillCheck } from "react-icons/bs";
 import data from "../../data/Service/data.json";
 import "./style.css";
+import { motion } from "framer-motion";
 
 function About() {
   const image = [
@@ -31,46 +32,54 @@ function About() {
   return (
     <section id="About">
       <div className="main-top-title bg-[#f5f5f5]">
-        <h2>GIỚI THIỆU VỀ CHÚNG TÔI</h2>
-        <div className="main-heading-line" />
-        <div className="About-banner mt-4 flex max-w-[1200px] pb-4 mx-auto  ">
-          <div className="About-banner-img w-2/4 max-md:w-[100%]">
-            <img
-              className="w-full h-full rounded-lg"
-              alt=""
-              src={require("../../image/camera/banner.jpg")}
-            />
-          </div>
-          <div className=" max-md:w-[100%]  w-2/4 p-[20px] max-md:p-[0.75rem]">
-            <div className="w-full ">
-              <p className="text-base text-justify ">
-                🎖️ Công ty tnhh thiết bị công nghệ Hồng Dương Việt Nam là công
-                ty chuyên các thiết bị Công nghệ, điện tử thông minh. Các hệ
-                thống nhà thông minh, có khả năng điều khiển, giám sát từ xa qua
-                điện thoại.
-              </p>
-              <p className="text-base pt-[10px] pb-[10px]">
-                🎖️ Các sản phẩm công nghệ đều được sản xuất của các hãng nổi
-                tiếng đi đầu về công nghệ như nhà thông minh LUMI,GEEKLINK ... ,
-                thiết bị an ninh HIKVISION,DAHUA,EZVIZ...
-              </p>
-              <p className="text-base text-justify pt-[10px] pb-[10px]">
-                🎖️ Với mong muốn mang lại trải nghiệm tốt nhất, tiện nghi nhất,
-                an toàn nhất đến tất cả mọi nhà Nên chúng tôi đang không ngừng
-                nỗ lực từng ngày, từng giờ. Để có thể đem đến cho mọi người các
-                sản phẩm công nghệ chất lượng cao và có giá thành hợp lý nhất.
-              </p>
-              <div className="social-btn">
-                <a
-                  className="social-btn-text"
-                  href="https://zalo.me/0963809069"
-                >
-                  Liên hệ tư vấn
-                </a>
+        <motion.div
+          initial={{ opacity: 0, translateY: 200 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h2>GIỚI THIỆU VỀ CHÚNG TÔI</h2>
+          <div className="main-heading-line" />
+          <div className="About-banner mt-4 flex max-w-[1200px] pb-4 mx-auto  ">
+            <div className="About-banner-img w-2/4 max-md:w-[100%]">
+              <img
+                className="w-full max-h-[400px] rounded-lg"
+                alt=""
+                src={require("../../image/camera/banner.jpg")}
+              />
+            </div>
+            <div className=" max-md:w-[100%]  w-2/4 p-[20px] max-md:p-[0.75rem]">
+              <div className="w-full ">
+                <p className="text-base text-justify ">
+                  🎖️ Công ty tnhh thiết bị công nghệ Hồng Dương Việt Nam là công
+                  ty chuyên các thiết bị Công nghệ, điện tử thông minh. Các hệ
+                  thống nhà thông minh, có khả năng điều khiển, giám sát từ xa
+                  qua điện thoại.
+                </p>
+                <p className="text-base pt-[10px] pb-[10px]">
+                  🎖️ Các sản phẩm công nghệ đều được sản xuất của các hãng nổi
+                  tiếng đi đầu về công nghệ như nhà thông minh LUMI,GEEKLINK ...
+                  , thiết bị an ninh HIKVISION,DAHUA,EZVIZ...
+                </p>
+                <p className="text-base text-justify pt-[10px] pb-[10px]">
+                  🎖️ Với mong muốn mang lại trải nghiệm tốt nhất, tiện nghi
+                  nhất, an toàn nhất đến tất cả mọi nhà Nên chúng tôi đang không
+                  ngừng nỗ lực từng ngày, từng giờ. Để có thể đem đến cho mọi
+                  người các sản phẩm công nghệ chất lượng cao và có giá thành
+                  hợp lý nhất.
+                </p>
+                <div className="social-btn">
+                  <a
+                    className="social-btn-text"
+                    href="https://zalo.me/0963809069"
+                  >
+                    Liên hệ tư vấn
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="About-company">
         <div className="w-full relative h-full">
@@ -84,13 +93,20 @@ function About() {
           <div className="About-construction flex flex-wrap justify-between ">
             {image.map((item) => {
               return (
-                <div key={item.id} className="About-image overflow-hidden">
+                <motion.div
+                  initial={{ opacity: 0, translateX: -200 }}
+                  whileInView={{ opacity: 1, translateX: 0 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  viewport={{ once: true }}
+                  key={item.id}
+                  className="About-image overflow-hidden"
+                >
                   <img
                     className="w-full h-full overflow-hidden"
                     alt=""
                     src={item.image}
                   />
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -107,7 +123,14 @@ function About() {
           <div className="About-top-wrap">
             {data.map((item) => {
               return (
-                <div key={item.id} className="About-top-service ">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                  viewport={{ once: true }}
+                  key={item.id}
+                  className="About-top-service "
+                >
                   <img
                     alt=""
                     className="w-full h-[260px] max-md:h-[200px]"
@@ -125,12 +148,18 @@ function About() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
         </div>
-        <div className="relative">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
           <div>
             <div className="max-w-[420px] m-auto bg-white">
               <h2>CAM KẾT CỦA CHÚNG TÔI</h2>
@@ -200,7 +229,7 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

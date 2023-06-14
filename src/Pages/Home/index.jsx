@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import Sliders from "../../Components/Slider";
 import Smartdevice from "./../Smartdevice/index.jsx";
 import Securitydevices from "../Securitydevices";

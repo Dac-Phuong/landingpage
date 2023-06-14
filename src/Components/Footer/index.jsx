@@ -48,10 +48,8 @@ function Footer() {
                 <div className="mr-4 text-[20px]">
                   <TfiEmail />
                 </div>
-
                 <p>Email: haidangpc@gmail.com</p>
               </li>
-
               <li className="footer-list-item">
                 <div className="mr-4 text-[20px]">
                   <FiGlobe />
@@ -61,18 +59,13 @@ function Footer() {
             </ul>
             <div className="social-network ">
               <div className="social-list-icon bg-[#3A6ECF]">
-                <a href="/" className="social-icon">
+                <a href="https://www.facebook.com/CAMERAHAIDANGTN" className="social-icon">
                   <FaFacebookF className="text-[16px] item-center" />
                 </a>
               </div>
               <div className="social-list-icon bg-[#0065F7]">
-                <a href="/" className="social-icon">
+                <a href="https://zalo.me/0963809069" className="social-icon">
                   <SiZalo className="text-[16px] item-center" />
-                </a>
-              </div>
-              <div className="social-list-icon bg-red-600">
-                <a href="/" className="social-icon">
-                  <BsYoutube className="text-[16px] item-center" />
                 </a>
               </div>
               <div className="social-list-icon bg-[#01AAE9]">

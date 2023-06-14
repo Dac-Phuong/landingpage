@@ -168,7 +168,7 @@
 }
 
 .About-image {
-  width: calc(33% - 10px);
+  width: calc(33% - 5px);
   overflow: hidden;
   margin-bottom: 10px;
   position: relative;
@@ -178,11 +178,13 @@
   border-radius: 8px;
 }
 .About-image:nth-child(1) {
-  width: 66.1%;
+  width: 66.4%;
 }
 .About-image img {
   transition: 0.5s;
 }
+
+
 /* responsive */
 @media only screen and (max-width: 1440px) {
   .About-top-wrap {
@@ -205,7 +207,8 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
   }
-  .About-wrap,.About-construction {
+  .About-wrap,
+  .About-construction {
     width: 100%;
     padding: 0 20px;
   }

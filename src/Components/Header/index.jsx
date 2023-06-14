@@ -8,7 +8,7 @@ const Header = () => {
   const [fixed, setFix] = useState(false);
   const closeMenu = () => setOnclick(false);
   function setFixed() {
-    if (window.scrollY >= 70) {
+    if (window.scrollY >= 60) {
       setFix(true);
     } else {
       setFix(false);
@@ -30,7 +30,7 @@ const Header = () => {
             >
               <img
                 src={require("../../image/logo/logo.png")}
-                className="attachment-50x50 size-50x50 wp-post-image"
+                className="attachment-45x45 size-45x45 "
                 alt=""
                 decoding="async"
                 loading="lazy"
@@ -55,7 +55,7 @@ const Header = () => {
                   <Link
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-60}
                     duration={500}
                     className="list-menu text-[15px] font-medium"
                     to={"Smart"}
@@ -68,7 +68,7 @@ const Header = () => {
                   <Link
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-60}
                     duration={500}
                     className="list-menu text-[15px] font-medium"
                     to={"Security"}
@@ -81,7 +81,7 @@ const Header = () => {
                   <Link
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-60}
                     duration={500}
                     className="list-menu text-[15px] font-medium"
                     to={"Office"}
@@ -94,7 +94,7 @@ const Header = () => {
                   <Link
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-60}
                     duration={500}
                     className="list-menu text-[15px] font-medium"
                     to={"About"}

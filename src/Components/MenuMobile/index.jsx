@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
 function MenuMobile() {
   const [show, setShow] = useState(false);

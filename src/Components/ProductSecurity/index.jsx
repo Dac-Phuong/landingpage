@@ -5,6 +5,7 @@ import "./style.css";
 import { Carousel } from "react-responsive-carousel";
 import { NextArrow, PrevArrow } from "../NextSlider";
 import { TfiClose } from "react-icons/tfi";
+import { motion } from "framer-motion";
 function Product() {
   const [ischeck, setIscheck] = useState(false);
   const [item, setItem] = useState({});
@@ -47,7 +48,13 @@ function Product() {
 
   return (
     <div className="wrap-product">
-      <div className="w-full">
+      <motion.div
+        initial={{ opacity: 0, translateX: -100 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="w-full"
+      >
         <Slider {...settings} className="group w-full">
           {products.map((item, index) => {
             return (
@@ -64,12 +71,16 @@ function Product() {
             );
           })}
         </Slider>
-      </div>
+      </motion.div>
       {ischeck ? (
         <div className="wrap-product-detail">
           <div className="product-detail relative">
             <div className="cursor-pointer z-10 top-0 right-0 ">
-              <TfiClose className="ml-auto pb-2 mt-2 mr-2" size={27} onClick={() => setIscheck(false)} />
+              <TfiClose
+                className="ml-auto pb-2 mt-2 mr-2"
+                size={27}
+                onClick={() => setIscheck(false)}
+              />
             </div>
             <div className="product-detail-col flex">
               <Carousel

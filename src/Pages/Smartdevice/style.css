@@ -127,7 +127,7 @@
 }
 
 .wrap-col-title p {
-  line-height: 1.5;
+  line-height: 1.7;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   color: rgb(4, 41, 110);
@@ -156,7 +156,7 @@ p {
 .main-wrap-col {
   display: flex;
   width: 100%;
-  max-width: 750px;
+  max-width: 800px;
   background-color: #f7f0e1;
   border-radius: 10px;
   margin-left: auto;
@@ -326,7 +326,9 @@ p {
     margin-right: 20px;
     padding: 20px;
   }
-
+  .main-wrap-left{
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   .main-left-title h2 {

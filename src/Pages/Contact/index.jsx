@@ -4,6 +4,7 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { FaRegUserCircle } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 function Contact() {
   const [values, setValues] = useState({
     name: "",
@@ -29,7 +30,7 @@ function Contact() {
         .then(
           (result) => {
             toast.success("Gửi gmail thành công !");
-            values.name("")
+            values.name("");
             console.log(result.text);
           },
           (error) => {
@@ -45,18 +46,30 @@ function Contact() {
     <div className="Contact">
       <div className="Contact-img">
         <img
-          alt="" 
+          alt=""
           className="Contact-img "
           src={require("../../image/banner/img-contact.jpg")}
         />
       </div>
       <div className="Contact-wrap">
-        <div className="Contact-wrap-banner w-[45%] m-auto">
+        <motion.div
+          className="Contact-wrap-banner w-[45%] m-auto"
+          initial={{ opacity: 0, translateX: -100 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
           <div className="Contact-wrap-banner">
             <img alt="" src={require("../../image/banner/img-contact.png")} />
           </div>
-        </div>
-        <div className="max-md:w-[100%] w-[55%] m-auto text-white ">
+        </motion.div>
+        <motion.div
+          className="max-md:w-[100%] w-[55%] m-auto text-white "
+          initial={{ opacity: 0, translateX: 100 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
           <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
           <div className="Contact-wrap-title">
             <div className="Contact-wrap-heading-1">
@@ -134,7 +147,7 @@ function Contact() {
               </div>
             </from>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

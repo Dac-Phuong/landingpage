@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import { NextArrow, PrevArrow } from "../NextSlider";
 import { TfiClose } from "react-icons/tfi";
 import { GoPrimitiveDot } from "react-icons/go";
+import { motion } from 'framer-motion';
 function ProductOficee() {
   const [ischeck, setIscheck] = useState(false);
   const [item, setItem] = useState({});
@@ -49,7 +50,13 @@ function ProductOficee() {
 
   return (
     <div className="wrap-product">
-      <div className="w-full">
+      <motion.div
+        initial={{ opacity: 0, translateX: 100 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="w-full"
+      >
         <Slider {...settings} className="group w-full">
           {data.map((item, index) => {
             return (
@@ -66,7 +73,7 @@ function ProductOficee() {
             );
           })}
         </Slider>
-      </div>
+      </motion.div>
       {ischeck ? (
         <div className="wrap-product-detail relative">
           <div className="product-detail ">
