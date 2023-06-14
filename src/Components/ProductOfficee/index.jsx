@@ -51,7 +51,7 @@ function ProductOficee() {
   return (
     <div className="wrap-product">
       <motion.div
-        initial={{ opacity: 0, translateX: 100 }}
+        initial={{ opacity: 0, translateX: -100 }}
         whileInView={{ opacity: 1, translateX: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         viewport={{ once: true }}
